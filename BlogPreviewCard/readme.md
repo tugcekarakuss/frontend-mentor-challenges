@@ -1,4 +1,4 @@
-# BlogPreviewCard 🚀
+# BlogPreviewCard
 
 This is a **Blog Preview Card** project completed as part of the Frontend Mentor learning path.  
 It demonstrates a responsive, modern card layout using HTML & CSS.

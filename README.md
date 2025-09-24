@@ -5,8 +5,11 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 
 ## Projects
 
-- [**QR Code Component**](./QRCodeComponent/) – Responsive card with QR code (HTML, CSS)  
-  *You can click on the project to access its folder.*
+- **QR Code Component** – Responsive card with QR code (HTML, CSS)  
+  → [Project Folder](./QRCodeComponent/) • [Live Demo](https://qrcode-component02.netlify.app/)
+
+- **Blog Preview Card** – Responsive blog card component (HTML, CSS)  
+  → [Project Folder](./BlogPreviewCard/) • [Live Demo](https://blogpreviewcard-tk.netlify.app/)
 
 <br>
 

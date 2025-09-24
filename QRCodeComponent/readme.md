@@ -8,13 +8,20 @@ The goal is to build a card component as close as possible to the provided desig
 - Learn responsive design techniques
 - Experiment with modern CSS features like `clamp()` and `max-width`
 
+## 🖼️ Project Preview
+
+![QR Code Component Screenshot](./images//desktop-design.jpg)   
+
+Check out the live project here: [Live Demo](https://qrcode-component02.netlify.app/)
+
+---
 ## Technologies Used
 - HTML5
 - CSS3 (Flexbox, Responsive Design)
 - Google Fonts (Outfit)
 
 ## Screenshot
-![QR Code Component Screenshot](./images//desktop-design.jpg)  
+
 
 ## Project Purpose
 This project helped me practice building a small, responsive card component using HTML and CSS, following a design mockup from Frontend Mentor. It was a great exercise to strengthen my understanding of layout, typography, and responsive design techniques.

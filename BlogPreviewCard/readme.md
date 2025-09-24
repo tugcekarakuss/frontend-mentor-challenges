@@ -9,9 +9,9 @@ Challenge link: [Frontend Mentor – Blog Preview Card](https://www.frontendment
 
 ## 🖼️ Project Preview
 
-![BlogPreviewCard Screenshot](../assets/images/BlogPreviewCard-website.jpg)  
+![BlogPreviewCard Screenshot](../BlogPreviewCard/assets/images/BlogPreviewCard-website.jpg)  
 
-Check out the live project here: [Live Demo](https://your-live-link.com)
+Check out the live project here: [Live Demo](https://blogpreviewcard-tk.netlify.app/)
 
 ---
 

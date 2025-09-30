@@ -11,6 +11,9 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 - **Blog Preview Card** – Responsive blog card component (HTML, CSS)  
   → [Project Folder](./BlogPreviewCard/) • [Live Demo](https://blogpreviewcard-tk.netlify.app/)
 
+- **Social Links Profile** – Responsive social profile card component (HTML, CSS)  
+  → [Project Folder](./SocialLinksProfile/) • [Live Demo](https://sociallinksprofiletk.netlify.app/)
+  
 <br>
 
 > Note: New projects will continue to be added to this repository. Follow to see more of my mini projects as I complete them.

@@ -17,7 +17,7 @@ It was built with **HTML** and **CSS** using custom styles and responsive design
 ## 🔗 Links
 
 - [Frontend Mentor Solution Page](https://www.frontendmentor.io/profile/tugcekarakuss)  
-- [Live Site](https://tugcekarakus.vercel.app)  
+- [Live Site](https://sociallinksprofiletk.netlify.app/)  
 
 ---
 

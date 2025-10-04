@@ -20,8 +20,6 @@ Check out the live project here: [Live Demo](https://qrcode-component02.netlify.
 - CSS3 (Flexbox, Responsive Design)
 - Google Fonts (Outfit)
 
-## Screenshot
-
 
 ## Project Purpose
 This project helped me practice building a small, responsive card component using HTML and CSS, following a design mockup from Frontend Mentor. It was a great exercise to strengthen my understanding of layout, typography, and responsive design techniques.

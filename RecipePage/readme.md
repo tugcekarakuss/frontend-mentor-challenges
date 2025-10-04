@@ -24,9 +24,11 @@ During this project, I practiced and improved my skills in:
 
 ## 🚀 Live Demo
 
-[View Live Project](https://your-live-link.com)
+→ [View Live Project](https://recippepage.netlify.app/)
 
----
+<br>
+
+
 
 ## 🛠️ Technologies
 

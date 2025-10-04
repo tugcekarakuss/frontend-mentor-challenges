@@ -13,6 +13,10 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 
 - **Social Links Profile** – Responsive social profile card component (HTML, CSS)  
   → [Project Folder](./SocialLinksProfile/) • [Live Demo](https://sociallinksprofiletk.netlify.app/)
+
+- **Recipe Page** – Responsive recipe page for a simple omelette (HTML, CSS)  
+  → [Project Folder](./RecipePage/) • [Live Demo](https://recippepage.netlify.app/)
+
   
 <br>
 

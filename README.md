@@ -16,7 +16,8 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 
 - **Recipe Page** – Responsive recipe page for a simple omelette (HTML, CSS)  
   → [Project Folder](./RecipePage/) • [Live Demo](https://recippepage.netlify.app/)
-
+- **Product Preview Card** – Responsive product card component (HTML, CSS)  
+  → [Project Folder](./ProductPreviewCardComponent/) • [Live Demo](https://productpreviewcardcomponennt.netlify.app/)
   
 <br>
 

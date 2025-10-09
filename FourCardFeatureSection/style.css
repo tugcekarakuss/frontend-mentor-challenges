@@ -21,12 +21,13 @@ body{
     color: var(--text);
 }
 main{
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
+    width: 100%;
+    max-width: 90%;
 }
 .text h1{
     font-weight: 200;
-
 }
 .text .bold{
     color: var(--heading);
@@ -36,34 +37,58 @@ main{
     font-size: 15px;
 }
 .boxes{
-    margin: 5rem 0;
-    
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
 }
+.boxes .text{text-align: left;} 
 .supervizor,
 .team-builder,
 .karma,
 .calculator{
-    height: 100%;
-    max-height: 300px;
-
+    width: 350px;
+    height: 230px;
     box-shadow:1px 1px 5px var(--text);
     border-radius: 10px;
-}
-.supervizor{
-    border-top: 5px solid var(--supervisor);
-    
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .team-builder{
     border-top: 5px solid var(--team-builder);
-    
+    grid-row: span 2 / span 2;
+    grid-column-start: 2; 
 }
-.karma{
-    border-top: 5px solid var(--karma);
-   
+.supervizor{
+    border-top: 5px solid var(--supervisor);
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
 }
 .calculator{
     border-top: 5px solid var(--calculator);
-   
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.karma{
+    border-top: 5px solid var(--karma);
+   grid-row: span 2 / span 2;
+   grid-column-start: 3;
+    grid-row-start: 2;
+} 
+.box_img{
+    align-self: flex-end;
+}
+.box_img img{
+    margin-top:2rem;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width:768px) {
+    
+}

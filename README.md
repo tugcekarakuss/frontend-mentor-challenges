@@ -19,6 +19,8 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 - **Product Preview Card** – Responsive product card component (HTML, CSS)  
   → [Project Folder](./ProductPreviewCardComponent/) • [Live Demo](https://productpreviewcardcomponennt.netlify.app/)
   
+- **Four Card Feature Section** – Responsive feature section with 4 cards using **CSS Grid** (HTML, CSS)  
+  → [Project Folder](./FourCardFeatureSection/) • [Live Demo](https://fourcarddfeaturesection.netlify.app/)
 <br>
 
 > Note: New projects will continue to be added to this repository. Follow to see more of my mini projects as I complete them.

@@ -3,21 +3,70 @@
     padding:0;
     box-sizing: border-box;
 }
+:root{
+    --purple-card:hsl(263, 55%, 52%);
+    --purple-heading:hsl(260, 100%, 95%);
+    --purple-text:hsl(264, 82%, 80%);
+    --grey-card:hsl(217, 19%, 35%);
+    --grey-text:hsl(0, 0%, 100%);
+    --grey-heading:hsl(217, 19%, 35%);
+    --dark-blue-card:hsl(219, 29%, 14%);
+    --black:hsl(0, 0%, 7%);
+    --white:hsl(0, 0%, 100%);
+    --grey:hsl(214, 17%, 92%);
+    --fs-body:clamp(0.7rem, 1vw, 0.9rem);
+}
 body{
     min-height: 100dvh;
+    background-color: var(--grey);
     display: grid;
     place-content: center;
     font-family:'Barlow Semi Condensed',sans-serif;
+    font-size: var(--fs-body);
 }
 main{
     margin-top: 2rem ;
     width: 90%;
     max-width: 1100px;
     display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
     gap: 1rem;
+}
+.card{
+    border-radius: 15px;
+    padding: 1rem
+}
+.card--daniel{
+    background-color: var(--purple-card);
+    grid-column: span 2 /span 2;
+}
+.card--jonathan{
+    background-color: var(--grey-heading);
+    grid-column-start: 3;
+}
+.card--kira{
+    background-color: var(--white);
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+.card--jeanette{
+    background-color: var(--white);
+    grid-row-start: 2;
+}
+.card--patrick{
+    background-color: var(--dark-blue-card);
+    grid-column: span 2 /span 2;
+    grid-row: 2;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width:768px) {
+    main{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+}

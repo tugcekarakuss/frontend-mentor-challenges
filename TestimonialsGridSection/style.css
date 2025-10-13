@@ -8,7 +8,7 @@
     --purple-heading:hsl(260, 100%, 95%);
     --purple-text:hsl(264, 82%, 80%);
     --grey-card:hsl(217, 19%, 35%);
-    --grey-text:hsl(0, 0%, 100%);
+    --grey-text:hsl(224, 10%, 45%);
     --grey-heading:hsl(217, 19%, 35%);
     --dark-blue-card:hsl(219, 29%, 14%);
     --black:hsl(0, 0%, 7%);
@@ -25,21 +25,36 @@ body{
     font-size: var(--fs-body);
 }
 main{
-    margin-top: 2rem ;
+    margin:1.5rem;
     width: 90%;
     max-width: 1100px;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap: 1rem;
+    gap:1rem;
 }
 .card{
     border-radius: 15px;
     padding: 1rem
 }
+.card__img{
+    border-radius: 50%;
+    width: 2rem;
+}
+h3{
+    position:relative; 
+    z-index: 5;
+}
 .card--daniel{
     background-color: var(--purple-card);
     grid-column: span 2 /span 2;
+    position: relative;
+}
+.card--daniel .test{
+    position: absolute;
+    top: 5px;
+    right: 1rem;
+    z-index: auto;
 }
 .card--jonathan{
     background-color: var(--grey-heading);
@@ -50,16 +65,23 @@ main{
     grid-row: span 2 / span 2;
     grid-column-start: 4;
 }
-.card--jeanette{
-    background-color: var(--white);
-    grid-row-start: 2;
-}
 .card--patrick{
     background-color: var(--dark-blue-card);
     grid-column: span 2 /span 2;
     grid-row: 2;
+    grid-column-start: 2;
 }
-
+.card--jeanette{
+    background-color: var(--white);
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.card__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 @media (max-width:768px) {
@@ -69,4 +91,12 @@ main{
         gap: 1rem;
         justify-items: center;
     }
+    .card{
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .card--daniel .test{
+        opacity: 0;
+    }
+
 }

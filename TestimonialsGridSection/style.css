@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --purple-card: hsl(263, 55%, 52%);
     --purple-heading: hsl(260, 100%, 95%);
@@ -15,111 +9,165 @@
     --black: hsl(0, 0%, 7%);
     --white: hsl(0, 0%, 100%);
     --grey: hsl(214, 17%, 92%);
-    --fs-body: clamp(0.7rem, 1vw, 0.9rem);
+    /*fonts*/
+    --fs-small: 13px;   
+    --fs-base: 16px;    
+    --fs-title: clamp(18px, 2vw, 20px);
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     min-height: 100dvh;
     background-color: var(--grey);
     display: grid;
     place-content: center;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: var(--fs-body);
 }
-
 main {
     margin: 2rem auto;
     width: 90%;
     max-width: 1100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 24px 30px;
+    gap: 24px 30px;
 }
-
-.card {
-    border-radius: 10px;
-    padding: 1.5rem
-}
-
-.card__img {
-    border-radius: 50%;
-    width: 2rem;
-}
-
-.card__user-info h2,
-.card__user-info p {
-    font-size: 13px;
-}
-
 h3 {
     position: relative;
     z-index: 5;
     margin: 1rem 0;
-    font-size: 20px;
+   font-size: var(--fs-title);
 }
-
-.card--daniel {
-    background-color: var(--purple-card);
-    grid-column: span 2 /span 2;
-    position: relative;
+h2,
+p {
+    line-height: 1.4;
+    font-size: var(--fs-base);
+    font-size: var(--fs-base);
 }
-
-.card--daniel .quatation {
-    position: absolute;
-    top: 5px;
-    right: 3rem;
-    z-index: auto;
+p{
+    font-size: 13px;
+    font-size: var(--fs-small);
 }
-
-.card--jonathan {
-    background-color: var(--grey-heading);
-    grid-column-start: 3;
+.card {
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px var(--grey-text);
 }
-
-.card--kira {
-    background-color: var(--white);
-    grid-row: span 2 / span 2;
-    grid-column-start: 4;
-}
-
-.card--patrick {
-    background-color: var(--dark-blue-card);
-    grid-column: span 2 /span 2;
-    grid-row: 2;
-    grid-column-start: 2;
-}
-
-.card--jeanette {
-    background-color: var(--white);
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-
 .card__header {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
 }
+.card__body{font-size: var(--fs-small);;}
+.card__img {
+    border-radius: 50%;
+    width: 2rem;
+}
+.card--daniel {
+    background-color: var(--purple-card);
+    grid-column: span 2 /span 2;
+    position: relative;
+}
+.card--daniel .card__header img {
+    border: 2px solid var(--purple-text);
+}
 
+.card--daniel .card__header h2,
+.card--daniel .card__header p {
+    color: var(--purple-heading);
+}
+.card--daniel .card__title {
+    color: var(--purple-heading);
+}
+.card--daniel .card__body {
+    color: var(--purple-text);
+}
+.card--daniel .quatation {
+    position: absolute;
+    top: 5px;
+    right: 3rem;
+}
+.card--jonathan {
+    background-color: var(--grey-heading);
+    grid-column-start: 3;
+}
+.card--jonathan .card__header h2,
+.card--jonathan .card__header p {
+    color: var(--grey);
+}
+.card--jonathan .card__title {
+    color: var(--white);
+}
+.card--jonathan .card__body {
+    color: var(--grey);
+}
+.card--kira {
+    background-color: var(--white);
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+.card--kira .card__header h2,
+.card--kira .card__header p {
+    color: var(--grey-text);
+}
+.card--kira .card__title {
+    color: var(--grey-heading);
+}
+.card--kira .card__body {
+    color: var(--grey-text);
+}
+.card--patrick {
+    background-color: var(--dark-blue-card);
+    grid-column: span 2 /span 2;
+    grid-row: 2;
+    grid-column-start: 2;
+}
+.card--patrick .card__header img {
+    border: 2px solid var(--purple-card);
+}
+.card--patrick .card__header h2,
+.card--patrick .card__header p {
+    color: var(--grey);
+}
+.card--patrick .card__title {
+    color: var(--grey);
+}
+.card--patrick .card__body {
+    color: var(--grey);
+}
+.card--jeanette {
+    background-color: var(--white);
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.card--jeanette .card__header h2,
+.card--jeanette .card__header p {
+    color: var(--grey-text);
+}
+.card--jeanette .card__title {
+    color: var(--grey-heading);
+}
+.card--jeanette .card__body {
+    color: var(--grey-text);
+}
 .attribution {
     font-size: 11px;
     text-align: center;
 }
-
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
 @media (max-width:768px) {
     main {
-        display: fle;
+        max-width: 80%;;
+        display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
         justify-items: center;
     }
-
     .card {
         grid-row: auto;
         grid-column: auto;

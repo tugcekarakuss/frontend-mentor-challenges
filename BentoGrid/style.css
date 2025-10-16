@@ -1,0 +1,26 @@
+:root{
+    --white:hsl(0, 0%, 100%);
+    --black:hsl(0, 0%, 7%);
+    --light-yellow:hsl(31, 66%, 93%);
+    --dark-yellow:hsl(39, 100%, 71%);
+    --light-purple:hsl(254, 88%, 90%);
+    --dark-purple:hsl(256, 67%, 59%);
+}
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100dvh;
+    display: grid;
+    place-content: center;
+    background-color: var(--white);
+}
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

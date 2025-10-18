@@ -1,13 +1,13 @@
 @font-face {
     font-family:'DMSans-regular';
     src: url(assets/fonts/static/DMSans-Regular.ttf) format('truetype');
-    font-weight: 400;
+    font-weight:100 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'DMSans-medium';
     src: url(assets/fonts/static/DMSans-Medium.ttf) format('truetype');
-    font-weight: 500;
+    font-weight:100 500;
     font-style: normal;
 }
 @font-face {
@@ -35,20 +35,23 @@ body{
     display: grid;
     place-content: center;
     background-color: var(--white);
-    font-family: 'DMSans',sans-serif;
+    font-family: 'DMSans-medium',sans-serif;
     font-size: var(--font-body);
+    letter-spacing: -2px;
 }
+
+h3{font-weight: 500; line-height: 1;}
 .bento-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1.5rem;
     width: 60%;
     max-width: 1400px;
-    margin: 5rem auto;
+    margin: 2rem auto ;
 }
     .bento-card{
         border-radius: 15px;
-        padding: 1rem;
+        padding: 1rem 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -60,11 +63,36 @@ body{
         grid-row:1/ span 2;
         font-size: 24px;
     }
+        .bento-card--create h3{
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+            .bento-card--create h3 .italic{
+                color: var(--dark-purple);
+                font-style: italic;
+            }
     .bento-card--hero{
         background-color: var(--dark-purple);
         grid-column: 2 / span 2;
         grid-row:1/  2;
+        text-align: center;
+        padding: 2rem 3rem;
     }
+        .bento-card--hero h1{
+            word-spacing:9px;
+            line-height: 1;
+            margin-bottom: 1rem;
+            color: var(--white);
+            font-family:'DMSans-regular';
+        }
+            .bento-card--hero .highlight{
+                color: var(--dark-yellow);
+            }
+            .bento-card--hero p{
+                color: var(--white);
+                margin-top: 0.5rem;
+                font-weight:100 ;
+            }
     .bento-card--timing{
         grid-column-start: 4;
         grid-row: 1/ span 3;
@@ -96,6 +124,6 @@ body{
         grid-column:3/span 2;
         grid-row: 4;
     }
-    img{ width:100; max-width: 150px; align-self: center; }
+    img{ width:100%; max-width: 200px; }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

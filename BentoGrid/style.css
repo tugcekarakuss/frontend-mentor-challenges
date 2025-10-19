@@ -51,7 +51,7 @@ h3{font-weight: 500; line-height: 1;}
 }
     .bento-card{
         border-radius: 15px;
-        padding: 1rem 1.5rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -102,7 +102,6 @@ h3{font-weight: 500; line-height: 1;}
         background-color: var(--dark-yellow);
         grid-column-start: 1;
         grid-row:3/ span 2;
-
     }
     .bento-card--platforms{
         background-color: var(--white);
@@ -123,7 +122,14 @@ h3{font-weight: 500; line-height: 1;}
         background-color: var(--dark-purple);
         grid-column:3/span 2;
         grid-row: 4;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
+        .bento-card--growth{
+            color: var(--white);
+            font-size:24px;
+        }
     img{ width:100%; max-width: 200px; }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

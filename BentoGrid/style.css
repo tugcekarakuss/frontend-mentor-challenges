@@ -1,7 +1,7 @@
 @font-face {
     font-family:'DMSans-regular';
     src: url(assets/fonts/static/DMSans-Regular.ttf) format('truetype');
-    font-weight:100 400;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
@@ -37,7 +37,7 @@ body{
     background-color: var(--white);
     font-family: 'DMSans-medium',sans-serif;
     font-size: var(--font-body);
-    letter-spacing: -2px;
+    letter-spacing: 1px;
 }
 
 h3{font-weight: 500; line-height: 1;}
@@ -66,6 +66,7 @@ h3{font-weight: 500; line-height: 1;}
         .bento-card--create h3{
             font-weight: 500;
             margin-bottom: 1rem;
+            letter-spacing: -2px;
         }
             .bento-card--create h3 .italic{
                 color: var(--dark-purple);
@@ -79,7 +80,6 @@ h3{font-weight: 500; line-height: 1;}
         padding: 2rem 3rem;
     }
         .bento-card--hero h1{
-            word-spacing:9px;
             line-height: 1;
             margin-bottom: 1rem;
             color: var(--white);
@@ -89,20 +89,34 @@ h3{font-weight: 500; line-height: 1;}
                 color: var(--dark-yellow);
             }
             .bento-card--hero p{
+                font-family: 'DMSans-regular';
                 color: var(--white);
                 margin-top: 0.5rem;
-                font-weight:100 ;
+                font-size: 15px;
             }
     .bento-card--timing{
         grid-column-start: 4;
         grid-row: 1/ span 3;
         background-color: var(--light-purple);
+        display: flex;
+        flex-direction: column;
     }
+        .bento-card--timing h3{
+            justify-self:center;
+        }
+        .bento-card--timing img{
+            justify-self: flex-end;
+            padding: 0;
+        }
+        .bento-card--timing p{
+            justify-self: center;
+        }
     .bento-card--ai{
         background-color: var(--dark-yellow);
         grid-column-start: 1;
         grid-row:3/ span 2;
     }
+        .bento-card--ai h3{margin-bottom: 1rem; font-size:24px; line-height:1;}
     .bento-card--platforms{
         background-color: var(--white);
         grid-column-start:  2;
@@ -128,7 +142,7 @@ h3{font-weight: 500; line-height: 1;}
     }
         .bento-card--growth{
             color: var(--white);
-            font-size:24px;
+            font-size:var(--font-body)
         }
     img{ width:100%; max-width: 200px; }
 .attribution { font-size: 11px; text-align: center; }

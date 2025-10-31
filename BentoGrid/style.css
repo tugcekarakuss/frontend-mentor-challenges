@@ -1,17 +1,17 @@
 @font-face {
-    font-family:'DMSans-regular';
+    font-family:'DMSans';
     src: url(assets/fonts/static/DMSans-Regular.ttf) format('truetype');
     font-weight:400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'DMSans-medium';
+    font-family: 'DMSans';
     src: url(assets/fonts/static/DMSans-Medium.ttf) format('truetype');
     font-weight:500;
     font-style: normal;
 }
 @font-face {
-    font-family: 'DMSans-italic';
+    font-family: 'DMSans';
     src: url(assets/fonts/static/DMSans-MediumItalic.ttf) format('truetype');
     font-weight:500;
     font-style: italic;
@@ -24,6 +24,10 @@
     --light-purple:hsl(254, 88%, 90%);
     --dark-purple:hsl(256, 67%, 59%);
     --font-body: clamp(16px, 1.8vw, 18px);
+    --font-h1:clamp(2.25rem, 2rem + 1.75vw, 2.5rem);
+    --font-h3:clamp(24px, 4vw, 28px);
+    --font-h3-small:clamp(20px, 4vw, 24px);
+    --font-p:clamp(14px, 4vw, 18px);
 }
 *{
     margin:0 ;
@@ -35,21 +39,18 @@ body{
     display: grid;
     place-content: center;
     background-color: var(--white);
-    font-family: 'DMSans-medium',sans-serif;
+    font-family: 'DMSans',sans-serif;
     font-size: var(--font-body);
-    letter-spacing: 1px;
 }
-
 h3{
     font-weight: 500; 
     line-height: 1;
-    font-family:'DMSans-medium';
+    font-size: var(--font-h3-small);
 }
 p{
-    font-family: 'DMSans-medium';
     font-weight: 400;
-    font-size: 13px;
     line-height: 1.2;
+    font-size: 12px;
 }
 .bento-grid{
     display: grid;
@@ -77,6 +78,7 @@ p{
         .bento-card--create h3{
             margin-bottom: 1rem;
             letter-spacing: -2px;
+            font-size: var(--font-h3);
         }
             .bento-card--create h3 .italic{
                 color: var(--dark-purple);
@@ -92,17 +94,16 @@ p{
         .bento-card--hero h1{
             line-height: 1;
             margin-bottom: 1rem;
+            font-weight: 500;
             color: var(--white);
-            font-family:'DMSans-regular';
+            font-size: var(--font-h1);
         }
             .bento-card--hero .highlight{
                 color: var(--dark-yellow);
             }
             .bento-card--hero p{
-                font-family: 'DMSans-regular';
                 color: var(--white);
                 margin-top: 0.5rem;
-                font-size: 15px;
             }
             .bento-card--hero img{
                 width: 100%;
@@ -115,37 +116,36 @@ p{
         }
         .bento-card--timing h3{
             text-align: left;
-            padding: 1rem;
+            padding: 1.5rem;
         }
         .bento-card--timing img{
-            display: block;         
             margin-left: auto;
             margin-right:0;         
-            width: 80%;             
+            width: 87%;             
             height: 50%;
             object-fit: cover; 
             object-position: left;
         }
         .bento-card--timing p{
             text-align: left;
-            padding: 1rem;
+            padding: 1.5rem;
         }
     .bento-card--ai{
         background-color: var(--dark-yellow);
         grid-column-start: 1;
         grid-row:3/ span 2;
+        padding: 0.7rem;
     }
         .bento-card--ai h3{
             margin-bottom: 1rem;
-            font-size:24px;
             line-height:1;
             text-align: left;
-            padding: 1rem;
+            padding: 0.7rem;
         }
         .bento-card--ai img{
             width: 100%;
             max-width: 170px;
-            margin: 0 0.5rem;
+            margin:  0.5rem;
         }
     .bento-card--platforms{
         background-color: var(--white);
@@ -153,7 +153,6 @@ p{
         grid-row: 2/4;
     }
         .bento-card--platforms img{
-            display: block;
             margin-top: 0;
             margin-bottom: 0.7rem;
             width: 97%;             
@@ -174,12 +173,10 @@ p{
         padding: 1rem;
     }
         .bento-card--stats h1{
-            font-size: 50px;
             font-weight: 500;
             text-align: left;
         }
         .bento-card--stats p{
-            font-size: 12px;
             margin-top: 0.3rem ;
         }
         .bento-card--stats img{
@@ -197,10 +194,9 @@ p{
     }
         .bento-card--schedule h3{
             text-align: left;
-            padding: 1rem 1rem 0 1rem;
+            padding: 1rem 
         }
         .bento-card--schedule img{
-            display: inline-block;
             margin-top: auto;
             margin-bottom: 0;
             width: 80%;             
@@ -219,8 +215,69 @@ p{
     }
         .bento-card--growth h3{
             color: var(--white);
-            font-size:var(--font-body);
+            margin-top: 1rem;
         }
     img{ width:100%; max-width: 200px; }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: var(--dark-purple) }
+@media (max-width:768px) {
+    .bento-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 1rem;
+    }
+    .bento-card{
+        grid-row: auto;
+        grid-column: auto;
+        align-items: flex-start;
+    }
+    .bento-card img{
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+        .bento-card--hero p{
+            align-self: center;
+        }
+        .bento-card--platforms{
+            align-self: flex-start;
+        }
+        .bento-card--schedule img{
+            align-self: flex-start;
+            padding-left: 1rem;
+        }
+        .bento-card--timing,
+        .bento-card--timing img{
+            align-items: center;
+            object-position: center;
+            margin: auto;
+        }
+        .bento-card--stats,
+        .bento-card--stats img{
+            align-items: flex-start;
+            align-self: flex-start;
+        }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+ .bento-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        gap: 1rem;
+    }
+    .bento-card{
+        grid-row: auto;
+        grid-column: auto;
+        align-items: center;
+    }
+    .bento-card img{
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        object-fit: contain;
+        object-position: center;
+        align-items: center;
+    }
+}

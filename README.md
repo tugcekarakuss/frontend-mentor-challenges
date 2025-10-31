@@ -25,6 +25,9 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 - **Testimonials Grid Section** – Responsive testimonials section using **CSS Grid** (HTML, CSS)  
   → [Project Folder](./TestimonialsGridSection/) • [Live Demo](https://testimoniallsgridsection.netlify.app/)
 
+- **BentoGrid Project** – Responsive bento-style layout built using **CSS Grid** (HTML, CSS)  
+  → [Project Folder](./BentoGrid/) • [Live Demo](https://bentogridproject.netlify.app/)
+
 <br>
 
 > Note: New projects will continue to be added to this repository. Follow to see more of my mini projects as I complete them.

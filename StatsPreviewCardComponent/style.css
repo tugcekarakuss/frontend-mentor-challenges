@@ -1,0 +1,13 @@
+picture{
+    position: relative;
+    display: inline-block;
+}
+picture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(87, 0, 138, 0.5); /* mor ton, %50 opak */
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

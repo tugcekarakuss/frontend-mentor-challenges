@@ -1,18 +1,151 @@
-:root{
+:root {
     --blue: hsl(233, 100%, 69%);
-    --green:hsl(171, 66%, 44%)
-    --header-color:hsl(210, 10%, 33%);
-    --text-color:hsl(201, 11%, 66%);
+    --green: hsl(171, 66%, 44%);
+    --header-color: hsl(210, 10%, 33%);
+    --text-color: hsl(201, 11%, 66%);
+    ---grey: hsl(0, 0%, 100%, 0.6);
+    --white: hsl(0, 0%, 100%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100dvh;
-    font-family: "Bai Jamjuree", sans-serif;;
+    font-family: "Bai Jamjuree", sans-serif;
+    ;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 100dvh;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        color: var(--header-color);
+    }
+
+    h2 {
+        color: var(--header-color);
+    }
+
+    h3 {
+        color: var(--header-color);
+    }
+
+    p {
+        color: var(--text-color);
+        margin: 1.5rem;
+    }
+    section{
+        margin: 2rem 0;
+    }
+    .header {
+        background-image: url(images/bg-header-mobile.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        margin: auto;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 2rem 0;
+        padding: 1rem;
+    }
+
+    .btn button {
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+        border: 0;
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .btn .ios {
+        background-color: var(--green);
+    }
+
+    .btn .mac {
+        background-color: var(--blue);
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+        margin: 2rem 0;
+    }
+    .snippets{
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .boots{
+        margin: 2.5rem 0;
+    }
+    .brands{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0;
+    }
+    footer{
+        background-color: var(---grey);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .pages ul li{
+            list-style-type: none;
+            margin: 1rem 0;
+            text-align: center;
+        }
+         .pages ul li a{
+            text-decoration: none;
+            color: var(--header-color);
+         }
+         .social-media{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+         }
+         .social-media i{
+            color: var(--header-color);
+            width: 20px;
+         }
+          .social-media i:hover,
+          .pages ul li a:hover
+          {
+            color: var(--green);
+         }
+        }

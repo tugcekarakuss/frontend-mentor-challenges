@@ -1,9 +1,13 @@
 :root {
     --blue: hsl(233, 100%, 69%);
+    --blue-border: hsl(233, 99%, 66%);
+    --blue-hover: hsl(233, 99%, 72%);
     --green: hsl(171, 66%, 44%);
+    --green-border: hsl(171, 65%, 41%);
+    --green-hover: hsl(171, 65%, 47%);
     --header-color: hsl(210, 10%, 33%);
     --text-color: hsl(201, 11%, 66%);
-    ---grey: hsl(0, 0%, 100%, 0.6);
+    --grey: hsla(0, 1%, 78%, 0.171);
     --white: hsl(0, 0%, 100%);
 }
 
@@ -16,7 +20,171 @@
 body {
     min-height: 100dvh;
     font-family: "Bai Jamjuree", sans-serif;
-    ;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100dvh;
+}
+
+h1 {
+    margin: 1rem;
+    color: var(--header-color);
+}
+
+h2 {
+    color: var(--header-color);
+}
+
+h3 {
+    color: var(--header-color);
+}
+
+p {
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+section {
+    margin: 2.5rem 0;
+}
+
+.header {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(images/bg-header-mobile.png) no-repeat top center / cover;
+  z-index: -1;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.btn button {
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    border: 0;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn .ios {
+    background-color: var(--green);
+    border-bottom: 5px solid var(--green-border);
+}
+
+.btn .ios:hover {
+    background-color: var(--green-hover);
+}
+
+.btn .mac {
+    background-color: var(--blue);
+    border-bottom: 5px solid var(--blue-border);
+}
+
+.btn .mac:hover {
+    background-color: var(--blue-hover);
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.snippets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.sub-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.boots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+}
+
+footer img {
+    max-width: 3rem;
+    margin: 2rem 0;
+}
+
+.pages ul li {
+    list-style-type: none;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.pages ul li a {
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media i {
+    color: var(--header-color);
+    width: 20px;
+}
+
+.social-media i:hover,
+.pages ul li a:hover {
+    color: var(--green);
 }
 
 .attribution {
@@ -28,124 +196,38 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width:768px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-height: 100dvh;
-    }
-
-    h1 {
-        margin-top: 1rem;
-        color: var(--header-color);
-    }
-
-    h2 {
-        color: var(--header-color);
-    }
-
-    h3 {
-        color: var(--header-color);
-    }
-
-    p {
-        color: var(--text-color);
-        margin: 1.5rem;
-    }
-    section{
-        margin: 2rem 0;
-    }
-    .header {
-        background-image: url(images/bg-header-mobile.png);
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2rem;
-        margin: auto;
+@media (min-width:768px) {
+    .header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url(images/bg-header-desktop.png) no-repeat top center / cover;
+        z-index: -1;
     }
 
     .btn {
+        flex-direction: row;
+    }
+
+    .snippets {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 2rem 0;
-        padding: 1rem;
-    }
-
-    .btn button {
-        padding: 1rem 2rem;
-        border-radius: 5rem;
-        border: 0;
-        color: var(--white);
-        cursor: pointer;
-    }
-
-    .btn .ios {
-        background-color: var(--green);
-    }
-
-    .btn .mac {
-        background-color: var(--blue);
-    }
-
-    img {
-        max-width: 90%;
-        height: auto;
-        margin: 2rem 0;
-    }
-    .snippets{
-        margin-top: 2rem;
-        margin-bottom: 10rem;
-    }
-    .boots{
-        margin: 2.5rem 0;
-    }
-    .brands{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 3rem 0;
-    }
-    footer{
-        background-color: var(---grey);
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-        .pages ul li{
-            list-style-type: none;
-            margin: 1rem 0;
-            text-align: center;
-        }
-         .pages ul li a{
-            text-decoration: none;
-            color: var(--header-color);
-         }
-         .social-media{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-         }
-         .social-media i{
-            color: var(--header-color);
-            width: 20px;
-         }
-          .social-media i:hover,
-          .pages ul li a:hover
-          {
-            color: var(--green);
-         }
-        }
+
+    .boots {
+        flex-direction: row;
+    }
+
+    .brands {
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    footer {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+}

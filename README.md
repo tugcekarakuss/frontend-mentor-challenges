@@ -31,6 +31,9 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 - **Stats Preview Card** – Responsive stats preview card built using **CSS Grid** and **Flexbox** (HTML, CSS)  
   → [Project Folder](./StatsPreviewCardComponent/) • [Live Demo](https://statspreviewcarddcomponent.netlify.app/)
 
+- **Clipboard Landing Page** – Responsive landing page built using **HTML, CSS (Flexbox & CSS Grid)** with a **mobile-first approach** and **accessible markup** (ARIA labels).  
+  → [Project Folder](./ClipboardLandingPage/) • [Live Demo](https://clipboardlandinggpage.netlify.app/)
+
 <br>
 
 > Note: New projects will continue to be added to this repository. Follow to see more of my mini projects as I complete them.

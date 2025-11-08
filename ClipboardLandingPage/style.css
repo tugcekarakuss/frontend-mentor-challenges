@@ -11,6 +11,9 @@
     --white: hsl(0, 0%, 100%);
     /*font-size*/
     --p-size: clamp(14px, 1.5vw, 18px);
+    --h1-size: clamp(1.8rem, 3vw, 3rem);
+    --h2-size: clamp(1.5rem, 2.5vw, 2.3rem);
+
 }
 
 * {
@@ -37,10 +40,12 @@ main {
 h1 {
     margin: 1rem;
     color: var(--header-color);
+    font-size: var(--h1-size);
 }
 
 h2 {
     color: var(--header-color);
+    font-size: var(--h2-size);
 }
 
 h3 {
@@ -56,7 +61,7 @@ p {
 }
 
 section {
-    padding: 4rem 1rem;
+    padding: clamp(2rem, 5vw, 4rem);
 }
 
 .header {
@@ -86,7 +91,7 @@ section {
 }
 
 .btn button {
-    padding: 1rem 5rem;
+    padding: 1rem clamp(2rem, 5vw, 5rem);
     border-radius: 5rem;
     border: 0;
     color: var(--white);
@@ -137,6 +142,7 @@ img {
 .boots {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 2.5rem 0;
@@ -145,6 +151,7 @@ img {
 .brands {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -185,7 +192,6 @@ footer img {
 
 .social-media i {
     color: var(--header-color);
-    width: 20px;
 }
 
 .social-media i:hover,
@@ -230,12 +236,10 @@ footer img {
         justify-content: flex-start;
         text-align: left;
         margin-left: 5rem;
-        /* resimle hizalamak için, istediğin değeri ayarlayabilirsin */
     }
 
     .sub-text .text {
         max-width: 50ch;
-        /* metin uzunluğunu dengeler */
     }
 
     .sub-text .text h3,
@@ -251,9 +255,9 @@ footer img {
 
     .boots {
         flex-direction: row;
-        
     }
-    .boots .boot{
+
+    .boots .boot {
         max-width: 45ch;
     }
 
@@ -272,7 +276,6 @@ footer img {
 
     footer img {
         max-width: 3rem;
-
     }
 
     .pages ul {
@@ -285,6 +288,5 @@ footer img {
 
     .social-media {
         align-self: center;
-
     }
 }

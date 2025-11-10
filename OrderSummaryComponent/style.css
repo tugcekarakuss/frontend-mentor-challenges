@@ -3,7 +3,7 @@
     --h2-color: hsl(223, 47%, 23%);
     --text-color: hsl(224, 23%, 55%);
     --button-bg: hsl(245, 75%, 52%);
-    --card-bg: hsl(225, 100%, 94%);
+    --card-bg: hsl(0, 0%, 100%);
     --plan-bg: hsl(225, 100%, 98%);
 }
 
@@ -21,21 +21,69 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--bg-color);
-    position: relative;
 }
 
 body::before {
     content: "";
-    position: fixed;
+    position: absolute;
     inset: 0;
-    background: url(images/pattern-background-mobile.svg) top center no-repeat;
+    background: url(images/pattern-background-desktop.svg) top center no-repeat;
     z-index: -1;
 }
-
+main{
+    width: 90%;
+    max-width: 400px;
+}
+article{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--card-bg);
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px 15px 0 0; 
+}
 h2 {
     color: var(--h2-color);
 }
+p{
+    color: var(--text-color);
+    max-width: 35ch;
+    margin-inline: auto;
+    text-align: center;
+}
+.plan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: var(--plan-bg);
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    margin: 1rem;
+}
+.actions button{
+    border: none;
+    cursor: pointer;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+}
+.actions  .proceed{
+    background-color: var(--button-bg);
+    color: var(--plan-bg);
 
+}
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -43,10 +91,4 @@ h2 {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-@media (min-width:768px) {
-    body::before {
-        background: url(images/pattern-background-desktop.svg) top center no-repeat;
-    }
 }

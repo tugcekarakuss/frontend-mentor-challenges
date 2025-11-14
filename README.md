@@ -34,6 +34,9 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 - **Clipboard Landing Page** – Responsive landing page built using **HTML, CSS (Flexbox & CSS Grid)** with a **mobile-first approach** and **accessible markup** (ARIA labels).  
   → [Project Folder](./ClipboardLandingPage/) • [Live Demo](https://clipboardlandinggpage.netlify.app/)
 
+- **Order Summary Component** – A fully responsive component built with **HTML & CSS** using a **mobile-first workflow**, clean semantics, and accessible markup.  
+  → [Project Folder](./OrderSummaryComponent/) • [Live Demo](https://orderrsummarycomponent.netlify.app/)
+
 <br>
 
 > Note: New projects will continue to be added to this repository. Follow to see more of my mini projects as I complete them.

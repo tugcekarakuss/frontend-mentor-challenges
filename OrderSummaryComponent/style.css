@@ -28,12 +28,12 @@ body::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(images/pattern-background-mobile.svg) top center no-repeat;
+    background: url(images/pattern-background-mobile.svg) top center/contain no-repeat;
     z-index: -1;
 }
 main{
     width: 90%;
-    max-width: 400px;
+    max-width: 370px;
 }
 article{
     border-radius: 15px;
@@ -41,7 +41,7 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     background-color: var(--card-bg);
 }
 img{
@@ -50,14 +50,16 @@ img{
     object-fit: contain;
     border-radius: 15px 15px 0 0; 
 }
-h2 {
+h2,
+h4 {
     color: var(--h2-color);
+    font-weight: 900;
 }
 p{
     color: var(--text-color);
     margin-inline: auto;
     text-align: center;
-    max-width: 55ch;
+    max-width: 26ch;
 }
 .plan{
     display: flex;
@@ -65,9 +67,9 @@ p{
     align-items: center;
     justify-content:space-around;
     background-color: var(--plan-bg);
-    gap: clamp(1rem, 5vw, 2.5rem);
+    gap: 5rem;
     padding: 1.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .plan-content{
     display: flex;
@@ -82,6 +84,14 @@ p{
   align-items: center; 
   white-space: nowrap;
 }
+.plan a{
+    color: var(--button-bg);
+    font-weight: 900;
+    font-size: clamp(0.75rem, 0.875rem + 0.5vw, 0.875rem);
+}
+.plan a:hover{
+    color: var(--h2-color);
+}
 .actions {
     display: flex;
     flex-direction: column;
@@ -93,13 +103,20 @@ p{
 .actions button{
     border: none;
     cursor: pointer;
-    padding: 1rem 3rem;
+    padding: 1rem 6rem;
     border-radius: 5px;
+    font-weight: 600;
 }
-.actions  .proceed{
+.actions .proceed{
     background-color: var(--button-bg);
     color: var(--plan-bg);
-
+}
+.actions  .proceed:hover{
+    background-color: var(--h2-color);
+}
+.cancel-order:hover{
+    color: var(--h2-color);
+    cursor: pointer;
 }
 .attribution {
     font-size: 11px;
@@ -109,8 +126,11 @@ p{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-@media (min-width: 768px) {
-  body::before {
-    background: url(images/pattern-background-desktop.svg) top center no-repeat;
-  }
+@media (min-width:768px) {
+    body::before {
+    background: url(images/pattern-background-desktop.svg) top center/contain no-repeat;
+}
+.plan-about {
+  white-space: nowrap;
+}
 }

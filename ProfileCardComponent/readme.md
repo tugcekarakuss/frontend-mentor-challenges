@@ -28,8 +28,7 @@ While building this project, I improved my skills in:
 
 ## 🚀 Live Demo
 
-👉 **Live Site:** https://profilecardcomponent.netlify.app/  
-*(Change the URL if needed.)*
+👉 **Live Site:** https://profilecarddcomponent.netlify.app/  
 
 ---
 

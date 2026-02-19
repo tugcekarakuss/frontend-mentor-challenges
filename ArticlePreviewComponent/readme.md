@@ -42,7 +42,7 @@ While building this project, I improved my skills in:
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 - **Fully Responsive:** Optimized for mobile, tablet, and desktop screens.
 - **Interactive Share Menu:** A tooltip-style menu on desktop and a full-width overlay on mobile.

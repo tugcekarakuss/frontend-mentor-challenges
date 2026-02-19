@@ -40,6 +40,8 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 - **Profile Card Component** – A clean and responsive profile card built with **HTML & CSS**, featuring decorative SVG backgrounds, semantic markup, and a mobile-first workflow.  
   → [Project Folder](./ProfileCardComponent/) • [Live Demo](https://profilecarddcomponent.netlify.app/)
 
+- **Article Preview Component** – An interactive article card featuring a dynamic share menu. Built with **HTML, CSS, and JavaScript**, focusing on state management, absolute positioning, and responsive transitions.
+  → [Project Folder](./ArticlePreviewComponent/) • [Live Demo](https://articlepreviewwcomponentt.netlify.app/)
 <br>
 
 > Note: New projects will continue to be added to this repository. Follow to see more of my mini projects as I complete them.

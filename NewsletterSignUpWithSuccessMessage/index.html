@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <!-- SIGNUP CARD -->
+      <section class="card" id="signup-card">
+        <picture class="card__image">
+          <source
+            media="(min-width: 768px)"
+            srcset="images/illustration-sign-up-desktop.svg"
+          />
+          <img
+            src="images/illustration-sign-up-mobile.svg"
+            alt="Sign up illustration"
+          />
+        </picture>
+
+        <div class="card__content">
+          <h1 class="card__title">Stay updated!</h1>
+
+          <p class="card__description">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul class="card__list">
+            <li>
+              <img src="assets/images/icon-list.svg" alt="" />
+              Product discovery and building what matters
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="" />
+              Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="" />
+              And much more!
+            </li>
+          </ul>
+
+          <form class="form" id="newsletter-form" novalidate>
+            <div class="form__label-row">
+              <label for="email">Email address</label>
+              <span class="form__error">Valid email required</span>
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              placeholder="email@company.com"
+              required
+            />
+
+            <button type="submit" class="btn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- SUCCESS CARD -->
+      <section class="success hidden" id="success-card">
+        <img
+          src="assets/images/icon-success.svg"
+          alt="Success icon"
+          class="success__icon"
+        />
+
+        <h2>Thanks for subscribing!</h2>
+
+        <p>
+          A confirmation email has been sent to
+          <strong id="user-email"></strong>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+
+        <button class="btn btn--full" id="dismiss-btn">Dismiss message</button>
+      </section>
+    </main>
+  </body>
+</html>

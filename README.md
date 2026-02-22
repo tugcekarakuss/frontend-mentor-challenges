@@ -42,6 +42,10 @@ These projects helped me practice HTML, CSS, and improve my responsive design sk
 
 - **Article Preview Component** – An interactive article card featuring a dynamic share menu. Built with **HTML, CSS, and JavaScript**, focusing on state management, absolute positioning, and responsive transitions.
   → [Project Folder](./ArticlePreviewComponent/) • [Live Demo](https://articlepreviewwcomponentt.netlify.app/)
+
+
+- **Newsletter Sign-Up Form** – A responsive newsletter subscription form with client-side email validation and dynamic success state handling. Built with **HTML, CSS, and JavaScript**, focusing on form validation logic, UI state transitions, and clean DOM manipulation.  
+  → [Project Folder](./NewsletterSignUpWithSuccessMessage/) • [Live Demo](https://newslettersignupwithsuccessmessagee.netlify.app/)
 <br>
 
 > Note: New projects will continue to be added to this repository. Follow to see more of my mini projects as I complete them.

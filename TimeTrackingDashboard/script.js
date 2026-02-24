@@ -1,8 +1,9 @@
 const cards = document.querySelector(".cards")
+const timeButtons = document.querySelectorAll(".timeframes button")
 async function loadData(timeframe) {
     const response = await fetch("./data.json")
     const data = await response.json()
-    cards.innerHTML=""
+    cards.innerHTML = ""
     data.forEach(item => {
         const card = document.createElement("div")
         card.innerHTML = `
@@ -17,11 +18,22 @@ async function loadData(timeframe) {
                 </div>
             </div>
         `
-        const titleClass=item.title.toLowerCase().replace(" ","")
-        card.classList.add("card",titleClass)
+        const titleClass = item.title.toLowerCase().replace(" ", "")
+        card.classList.add("card", titleClass)
         cards.appendChild(card)
-
-    });
+    })
 }
 
+timeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        timeButtons.forEach(btn => {
+            btn.classList.remove("active")
+        })
+
+        button.classList.add("active")
+        const timeframe = button.textContent.trim().toLowerCase()
+        loadData(timeframe)
+    })
+})
 loadData("daily")

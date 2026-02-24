@@ -4,7 +4,7 @@ This project is a **[Frontend Mentor](https://www.frontendmentor.io)** challenge
 
 ---
 
-## 🌟 What I Learned
+## What I Learned
 
 During this project, I practiced:
 
@@ -16,19 +16,19 @@ During this project, I practiced:
 
 ---
 
-## 📸 Project Screenshot
+## Project Screenshot
 
-![Project Screenshot](images/desktop-preview.jpg)
+![Project Screenshot](./desktop-preview.jpg)
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 → [View Live Project](https://fourcarddfeaturesection.netlify.app/)
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 - **HTML5**
 - **CSS3** (Grid, Variables, Responsive Design)
@@ -36,5 +36,5 @@ During this project, I practiced:
 
 ---
 
-👩‍💻 **Coded by [Tuğçe Karakuş](https://github.com/tugcekarakuss)**  
+**Coded by [Tuğçe Karakuş](https://github.com/tugcekarakuss)**  
 Challenge by [Frontend Mentor](https://www.frontendmentor.io)

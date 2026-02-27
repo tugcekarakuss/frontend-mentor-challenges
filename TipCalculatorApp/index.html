@@ -59,7 +59,7 @@
           <div class="form-group">
             <div class="label-row">
               <label for="people">Number of People</label>
-              <span class="error-message" id="people-error" aria-live="polite">
+              <span class="error-message" id="people-error" aria-live="polite">Can't be zero
               </span>
             </div>
 
@@ -85,7 +85,7 @@
               <p class="result-title">Tip Amount</p>
               <span class="result-sub">/ person</span>
             </div>
-            <h2 class="result-value">$0.00</h2>
+            <h2 class="result-value" id="tip-amount-person">$0.00</h2>
           </div>
 
           <div class="result-item">
@@ -93,12 +93,13 @@
               <p class="result-title">Total</p>
               <span class="result-sub">/ person</span>
             </div>
-            <h2 class="result-value">$0.00</h2>
+            <h2 class="result-value" id="total-person">$0.00</h2>
           </div>
 
           <button class="reset-btn">RESET</button>
         </section>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

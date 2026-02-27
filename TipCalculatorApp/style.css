@@ -171,6 +171,7 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s ease;
+  
 }
 
 .reset-btn:hover {

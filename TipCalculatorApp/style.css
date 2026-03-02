@@ -105,7 +105,10 @@ input:focus {
   font-weight: bold;
   transition: 0.2s ease;
 }
-
+.active-tip {
+  background-color: var(--clr-primary);
+  color: var(--clr-dark-cyan);
+}
 .tip-btn:hover {
   background-color: var(--clr-primary);
   color: var(--clr-dark-cyan);
@@ -125,7 +128,7 @@ input:focus {
   font-size: 0.8rem;
   color: #e17052;
   font-weight: 700;
-  visibility: hidden;
+  visibility:hidden;
 }
 
 .input-error {

@@ -11,6 +11,39 @@ let bilValue = 0.0
 let tipPercent = 0.0
 let peopleValue = 1
 
+billInput.addEventListener("input",()=>{
+    bilValue=parseFloat(billInput.value)||0
+    calculateTip()
+})
+
+peopleInput.addEventListener("input",()=>{
+    peopleValue=parseInt(peopleInput.value)
+
+    if(peopleValue<=0){
+        errorMsg.style.visibility="visible"
+        peopleInput.classList.add("input-error")
+    }
+    else{
+        errorMsg.style.visibility="hidden"
+        peopleInput.classList.remove("input-error")
+        calculateTip()
+    }
+})
+tipBtns.forEach((btn)=>{
+    btn.addEventListener("click",(e)=>{
+        tipBtns.forEach(b=>b.classList.remove("active-tip"))
+        e.target.classList.add("active-tip")
+
+        tipPercent=parseFloat(e.target.value)
+        customTipInput.value=""
+        calculateTip()
+    })
+})
+customTipInput.addEventListener("input",()=>{
+    tipPercent=parseFloat(customTipInput.value)/100||0
+    tipBtns.forEach(b=>b.classList.remove("active-tip"))
+    calculateTip()
+})
 function calculateTip() {
     if (peopleValue >= 1) {
         let totalTip = bilValue * tipPercent

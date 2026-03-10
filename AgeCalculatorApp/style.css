@@ -56,17 +56,33 @@ input {
     max-width: 120px;
     padding: 12px;
     font-size: 20px;
+    font-weight: 700;
     border: 1px solid var(--grey-200);
     border-radius: 5px;
-}
-
-input::placeholder {
-    font-weight: 700;
 }
 
 input:focus {
     outline: none;
     border: 1px solid var(--purple);
+}
+
+.error-message {
+    font-size: 12px;
+    color: var(--red);
+    font-style: italic;
+    margin-top: 6px;
+}
+
+.input-group.error label {
+    color: var(--red);
+}
+
+.input-group.error input {
+    border: 1px solid var(--red);
+}
+
+.input-group.error .error-message {
+    display: block;
 }
 
 .divider {
@@ -114,7 +130,6 @@ input:focus {
 }
 
 @media (max-width:600px) {
-
     .container {
         padding: 30px 20px;
     }

@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <main class="container">
       <form class="date-form">
@@ -20,16 +20,19 @@
           <div class="input-group">
             <label for="day">DAY</label>
             <input type="number" id="day" placeholder="DD" />
+            <small class="error-message" id="day-error"></small>
           </div>
 
           <div class="input-group">
             <label for="month">MONTH</label>
             <input type="number" id="month" placeholder="MM" />
+            <small class="error-message" id="month-error"></small>
           </div>
 
           <div class="input-group">
             <label for="year">YEAR</label>
             <input type="number" id="year" placeholder="YYYY" />
+            <small class="error-message" id="year-error"></small>
           </div>
         </div>
 
@@ -46,5 +49,6 @@
         <h1><span id="days">--</span> days</h1>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

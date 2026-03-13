@@ -1,0 +1,149 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 100%, 100%);
+    --grey-500: hsl(217, 12%, 63%);
+    --grey-900: hsl(213, 19%, 18%);
+    --grey-950: hsl(216, 12%, 8%);
+
+    /*typography size */
+    --fs-title: clamp(1.3rem, 1rem + 1.5vw, 1.8rem);
+    --fs-body: clamp(0.85rem, 0.7rem + 0.4vw, 0.95rem);
+    --fs-rating: clamp(0.9rem, 0.8rem + 0.5vw, 1rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    color: var(--white);
+    min-height: 100dvh;
+    background-color: var(--grey-950);
+}
+
+main {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+}
+
+.card {
+    width: min(420px, 100%);
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 1.5rem;
+
+    background: radial-gradient(circle at top,
+            hsl(213, 19%, 22%),
+            hsl(216, 12%, 10%));
+}
+
+.card__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.card__title {
+    font-size: var(--fs-title);
+    margin-bottom: 0.8rem;
+}
+
+.card__description {
+    color: var(--grey-500);
+    line-height: 1.6;
+    font-size: var(--fs-body);
+    margin-bottom: 1.8rem;
+}
+
+.card__ratings {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.card__rating {
+    width: clamp(40px, 10vw, 48px);
+    height: clamp(40px, 10vw, 48px);
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--grey-500);
+    font-size: var(--fs-rating);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.card__rating:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.card__rating.active {
+    background-color: var(--white);
+    color: var(--grey-950);
+}
+
+.card__submit {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.card__submit:hover {
+    background-color: var(--white);
+    color: var(--grey-950);
+}
+
+section.card {
+    text-align: center;
+}
+
+.card__illustration {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    max-width: 160px;
+}
+
+.card__selected {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--orange);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    width: fit-content;
+    margin: 0 auto 1.5rem auto;
+    font-size: var(--fs-body);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width:380px) {
+    .card {
+        border-radius: 1rem;
+    }
+
+    .card__ratings {
+        gap: 0.4rem;
+    }
+
+}

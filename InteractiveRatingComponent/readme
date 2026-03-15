@@ -1,0 +1,122 @@
+# Interactive Rating Component
+
+A responsive **Interactive Rating Component** that allows users to select a rating from **1 to 5** and submit their feedback.
+
+Built with **HTML, CSS, and Vanilla JavaScript**, focusing on **UI state management, event handling, and dynamic interface updates**.
+
+This project is a solution to the **Interactive Rating Component challenge** from  
+[Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
+
+---
+
+## Live Demo
+
+**Live Site:**  
+https://interactiveratingcomponent.vercel.app/
+
+---
+
+## Project Screenshot
+
+![Project Screenshot](images/preview.jpg)
+
+*Desktop version of the Interactive Rating Component.*
+
+---
+
+## Features
+
+### Rating Selection
+
+Allows users to select a rating between:
+
+- **1**
+- **2**
+- **3**
+- **4**
+- **5**
+
+Only one rating can be active at a time.
+
+### Submit Interaction
+
+After selecting a rating and clicking **Submit**:
+
+- The rating card is hidden
+- A **Thank You** state is displayed
+- The selected rating is shown dynamically
+
+### State Handling
+
+The selected rating is stored in a **JavaScript state object** and used to control the UI behavior.
+
+### Form Validation
+
+Prevents submission when no rating has been selected.
+
+### Responsive Layout
+
+- **Desktop:** Centered card layout  
+- **Mobile:** Optimized spacing and responsive typography
+
+---
+
+## Technologies Used
+
+### HTML5
+
+- Semantic structure
+- Accessible button elements
+- Separate UI states (Rating / Thank You)
+
+### CSS3
+
+- Flexbox layout
+- Responsive design
+- `clamp()` for fluid typography
+- Hover and active states
+- Gradient background styling
+
+### JavaScript (Vanilla JS)
+
+- DOM selection & manipulation
+- Event handling (`click`, `submit`)
+- UI state management
+- Class toggling with `classList`
+- Conditional rendering for UI states
+
+---
+
+## What I Learned
+
+While building this project, I strengthened my understanding of:
+
+- **Managing UI state in JavaScript**
+- **Handling user interaction with event listeners**
+- **Implementing single-selection UI patterns**
+- **Updating UI dynamically using `textContent`**
+- **Controlling component states with CSS classes**
+- **Preventing invalid user actions using conditional logic**
+- **Separating UI logic and state logic**
+
+---
+
+## Reflection
+
+This project helped reinforce the concept of **UI state management without using a framework**.
+
+Implementing the rating selection required managing a **single active selection**, similar to radio button behavior but fully controlled with JavaScript.
+
+I also practiced controlling **multiple UI states** (rating screen and thank-you screen) by toggling CSS classes and updating content dynamically.
+
+Structuring the code to separate **state management**, **event handling**, and **DOM updates** made the implementation cleaner and easier to maintain.
+
+---
+
+## Credits
+
+**Coded by:**  
+[Tuğçe Karakuş](https://github.com/tugcekarakuss)
+
+**Challenge by:**  
+[Frontend Mentor](https://www.frontendmentor.io)

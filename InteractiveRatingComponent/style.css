@@ -112,7 +112,10 @@ main {
     background-color: var(--white);
     color: var(--grey-950);
 }
-
+button:focus-visible{
+    outline:3px solid var(--orange);
+    outline-offset:3px;
+}
 section.card {
     text-align: center;
 }

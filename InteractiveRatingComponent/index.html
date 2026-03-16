@@ -31,25 +31,65 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <div class="card__ratings">
-          <button type="button" class="card__rating" value="1">1</button>
-          <button type="button" class="card__rating" value="2">2</button>
-          <button type="button" class="card__rating" value="3">3</button>
-          <button type="button" class="card__rating" value="4">4</button>
-          <button type="button" class="card__rating" value="5">5</button>
+        <div class="card__ratings" role="group" aria-label="Rating from 1 to 5">
+          <button
+            type="button"
+            class="card__rating"
+            value="1"
+            aria-label="Rate 1 out of 5"
+            aria-pressed="false"
+          >
+            1
+          </button>
+          <button
+            type="button"
+            class="card__rating"
+            value="2"
+            aria-label="Rate 2 out of 5"
+            aria-pressed="false"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            class="card__rating"
+            value="3"
+            aria-label="Rate 3 out of 5"
+            aria-pressed="false"
+          >
+            3
+          </button>
+          <button
+            type="button"
+            class="card__rating"
+            value="4"
+            aria-label="Rate 4 out of 5"
+            aria-pressed="false"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            class="card__rating"
+            value="5"
+            aria-label="Rate 5 out of 5"
+            aria-pressed="false"
+          >
+            5
+          </button>
         </div>
         <button type="submit" class="card__submit">Submit</button>
         <!-- Rating state end -->
       </form>
 
       <!-- Thank you state start -->
-      <section class="card hidden" id="thankyou-card">
+      <section class="card hidden" id="thankyou-card" aria-live="polite" aria-hidden="true">
         <img
           class="card__illustration"
           src="images/illustration-thank-you.svg"
           alt="Thank you illustration"
         />
-        <p class="card__selected">
+        <p class="card__selected" aria-live="polite">
           You selected <span id="rating"></span> out of 5
         </p>
         <h2 class="card__title">Thank you!</h2>

@@ -5,7 +5,6 @@
     --purple-600: hsl(292, 16%, 49%);
     --purple-950: hsl(292, 42%, 14%);
 
-
     /* FONT SIZE */
     --fs-xl: 2.5rem;
     --fs-lg: 1rem;
@@ -17,7 +16,6 @@
     --space-md: 1.5rem;
     --space-lg: 2rem;
 
-
     /* RADIUS */
     --radius-md: 16px;
 
@@ -26,7 +24,6 @@
 
     /* ICON SIZE */
     --icon-size: 24px;
-
 }
 
 @font-face {
@@ -42,9 +39,7 @@
 }
 
 body {
-
     min-height: 100vh;
-
     display: grid;
     place-content: center;
     background-image: url(assets/images/background-pattern-desktop.svg);
@@ -53,7 +48,6 @@ body {
     background-size: 100%;
     background-color: var(--purple-100);
     padding: var(--space-md);
-
 }
 
 .card {
@@ -109,6 +103,12 @@ body {
 
 .faq__question:hover {
     color: purple;
+}
+
+.faq__question:focus-visible {
+    outline: 2px solid var(--purple-600);
+    outline-offset: 4px;
+    border-radius: 4px;
 }
 
 .faq__answer {

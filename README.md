@@ -13,7 +13,7 @@ These projects helped me practice HTML, CSS, JavaScript and improve my responsiv
 ### FAQ Accordion
 
 <a href="https://faqaccordion-three.vercel.app/">
-  <img src="./FAQAccordion/assets/images/preview.jpg" width="100%" />
+  <img src="./FaqAccordion/assets/images/preview.jpg" width="100%" />
 </a>
 
 A responsive FAQ accordion component that allows users to expand and collapse answers. Built with **HTML, CSS, and JavaScript**, focusing on accessibility (ARIA), state toggling, and smooth UI transitions.

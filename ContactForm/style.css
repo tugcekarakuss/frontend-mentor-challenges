@@ -1,0 +1,43 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey-500: hsl(186, 15%, 59%);
+    --grey-900: hsl(187, 24%, 22%);
+    --green-200: hsl(148, 38%, 91%);
+    --green-600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+}
+
+@font-face {
+    font-family: karlaRegular;
+    src: url(assets/fonts/Karla-VariableFont_wght.ttf);
+    font-weight: 100 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: karlaItalic;
+    src: url(assets/fonts/Karla-VariableFont_wght.ttf);
+    font-weight: 100 900;
+    font-style: italic
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    display: grid;
+    place-content: center;
+    font-family: 'karlaRegular',Arial, Helvetica, sans-serif;
+    background-color: var(--green-200);
+}
+
+section{
+    background-color: var(--white);
+}
+.error-message{
+    color: red;
+}

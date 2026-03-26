@@ -14,56 +14,87 @@
   </head>
   <body>
     <main>
-      
-      <div class="alert-message">
-        <div class="message-header">
-          <img src="assets/images/icon-success-check.svg" alt="" />
-          <h3>Message Sent!</h3>
-        </div>
-        <p>Thanks for completing the form. We'll be in touch soon!</p>
-      </div>
-
-      <section class="form-section">
-        <form action="">
-          <h1>Contact Us</h1>
-
-          <div class="user-name">
-            <label for="firsName">First Name *<span>required</span></label>
-            <input type="text" name="firsName" required />
-            <p class="error-message">This field is required</p>
-            <label for="lastName">Last Name *<span>required</span></label>
-            <input type="text" name="lastName" required />
-            <p class="error-message">This field is required</p>
+      <div class="container">
+        <!-- SUCCESS MESSAGE -->
+        <div class="alert-message hidden">
+          <div class="message-header">
+            <img
+              src="assets/images/icon-success-check.svg"
+              alt="success icon"
+            />
+            <h3>Message Sent!</h3>
           </div>
-          <label for="email">Email Address *<span>required</span></label>
-          <input type="email" name="email" required />
-          <p class="error-message">Please enter a valid email address</p>
-        </form>
-
-        <div class="query-type">
-          <fieldset>
-            <legend>Query Type *</legend>
-            <input type="radio" name="query" id="" value="GeneralEnquiry" />
-            <label for="">General Enquiry</label>
-
-            <input type="radio" name="query" id="" value="SupportRequest" />
-            <label for="">Support Request</label>
-
-            <p class="error-message">Please select a query type</p>
-          </fieldset>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
         </div>
 
-        <label for="message">Message *</label>
-        <textarea name="message" id="" rows="4" cols="50"></textarea>
-        <p class="error-message">This field is required</p>
+        <!-- FORM -->
+        <section class="form-section">
+          <form>
+            <h1>Contact Us</h1>
 
-        <input type="checkbox" name="contract" id="" />
-        <label for="contract">I consent to being contacted by the team. </label>
-        <p class="error-message">
-          To submit this form, please consent to being contacted
-        </p>
-        <button type="submit">Submit</button>
-      </section>
+            <!-- NAME -->
+            <div class="name-group">
+              <div class="input-group error">
+                <label for="firstName">First Name *</label>
+                <input id="firstName" type="text" name="firstName" required />
+                <p class="error-message">This field is required</p>
+              </div>
+
+              <div class="input-group">
+                <label for="lastName">Last Name *</label>
+                <input id="lastName" type="text" name="lastName" required />
+                <p class="error-message">This field is required</p>
+              </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-group">
+              <label for="email">Email Address *</label>
+              <input id="email" type="email" name="email" required/>
+              <p class="error-message">Please enter a valid email address</p>
+            </div>
+
+            <!-- QUERY TYPE -->
+            <fieldset class="query-group">
+              <legend>Query Type *</legend>
+
+              <div class="radio-wrapper">
+                <label class="radio-card">
+                  <input type="radio" name="query" value="general" />
+                  General Enquiry
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="query" value="support" />
+                  Support Request
+                </label>
+              </div>
+
+              <p class="error-message">Please select a query type</p>
+            </fieldset>
+
+            <!-- MESSAGE -->
+            <div class="input-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p class="error-message">This field is required</p>
+            </div>
+
+            <!-- CHECKBOX -->
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="consent" />
+                I consent to being contacted by the team.
+              </label>
+              <p class="error-message">
+                To submit this form, please consent to being contacted
+              </p>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
     </main>
   </body>
 </html>

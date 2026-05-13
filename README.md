@@ -10,6 +10,20 @@ These projects helped me practice HTML, CSS, JavaScript and improve my responsiv
 <tr>
 <td width="50%" valign="top">
 
+### Contact Form
+
+<a href="https://contact-formm-project.netlify.app/">
+  <img src="./ContactForm/assets/images/desktop-preview.jpg" width="100%" />
+</a>
+
+A responsive contact form with client-side validation and dynamic error handling. Built with **HTML, CSS, and JavaScript**, focusing on form validation, accessible markup, and clean UI feedback.
+
+→ [Project Folder](./ContactForm/) • [Live Demo](https://contact-formm-project.netlify.app/)
+
+</td>
+
+<td width="50%" valign="top">
+
 ### FAQ Accordion
 
 <a href="https://faqaccordion-three.vercel.app/">
@@ -21,7 +35,9 @@ A responsive FAQ accordion component that allows users to expand and collapse an
 → [Project Folder](./FaqAccordion/) • [Live Demo](https://faqaccordion-three.vercel.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Interactive Rating Component
@@ -35,9 +51,7 @@ An interactive rating component that allows users to select a rating from **1 to
 → [Project Folder](./InteractiveRatingComponent/) • [Live Demo](https://interactiveratingcomponent.vercel.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Age Calculator App
@@ -51,7 +65,9 @@ A responsive age calculator that computes the exact age in years, months, and da
 → [Project Folder](./AgeCalculatorApp/) • [Live Demo](https://age-calculator-app-yourlink.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Tip Calculator App
@@ -65,9 +81,7 @@ A responsive tip calculator that dynamically calculates tip and total amount per
 → [Project Folder](./TipCalculatorApp/) • [Live Demo](https://tip-calculator-app-one-psi.vercel.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Time Tracking Dashboard
@@ -81,7 +95,9 @@ A responsive time tracking dashboard that dynamically renders activity data from
 → [Project Folder](./TimeTrackingDashboard/) • [Live Demo](https://timetrackinggdashboard.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Newsletter Sign-Up Form
@@ -95,9 +111,7 @@ A responsive newsletter subscription form with client-side email validation and 
 → [Project Folder](./NewsletterSignUpWithSuccessMessage/) • [Live Demo](https://newslettersignupwithsuccessmessagee.netlify.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Article Preview Component
@@ -111,7 +125,9 @@ An interactive article card featuring a dynamic share menu. Built with **HTML, C
 → [Project Folder](./ArticlePreviewComponent/) • [Live Demo](https://articlepreviewwcomponentt.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Profile Card Component
@@ -125,9 +141,7 @@ A clean and responsive profile card built with **HTML & CSS**, featuring decorat
 → [Project Folder](./ProfileCardComponent/) • [Live Demo](https://profilecarddcomponent.netlify.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Order Summary Component
@@ -141,7 +155,9 @@ A fully responsive component built with **HTML & CSS** using a **mobile-first wo
 → [Project Folder](./OrderSummaryComponent/) • [Live Demo](https://orderrsummarycomponent.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Clipboard Landing Page
@@ -155,9 +171,7 @@ Responsive landing page built using **HTML, CSS (Flexbox & CSS Grid)** with a **
 → [Project Folder](./ClipboardLandingPage/) • [Live Demo](https://clipboardlandinggpage.netlify.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Stats Preview Card
@@ -171,7 +185,9 @@ Responsive stats preview card built using **CSS Grid** and **Flexbox**.
 → [Project Folder](./StatsPreviewCardComponent/) • [Live Demo](https://statspreviewcarddcomponent.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### BentoGrid Project
@@ -185,9 +201,7 @@ Responsive bento-style layout built using **CSS Grid**.
 → [Project Folder](./BentoGrid/) • [Live Demo](https://bentogridproject.netlify.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Testimonials Grid Section
@@ -201,7 +215,9 @@ Responsive testimonials section using **CSS Grid**.
 → [Project Folder](./TestimonialsGridSection/) • [Live Demo](https://testimoniallsgridsection.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Four Card Feature Section
@@ -215,9 +231,7 @@ Responsive feature section with 4 cards using **CSS Grid**.
 → [Project Folder](./FourCardFeatureSection/) • [Live Demo](https://fourcarddfeaturesection.netlify.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Product Preview Card
@@ -231,7 +245,9 @@ Responsive product card component (HTML, CSS).
 → [Project Folder](./ProductPreviewCardComponent/) • [Live Demo](https://productpreviewcardcomponennt.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Recipe Page
@@ -245,9 +261,7 @@ Responsive recipe page for a simple omelette.
 → [Project Folder](./RecipePage/) • [Live Demo](https://recippepage.netlify.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### Social Links Profile
@@ -261,7 +275,9 @@ Responsive social profile card component.
 → [Project Folder](./SocialLinksProfile/) • [Live Demo](https://sociallinksprofiletk.netlify.app/)
 
 </td>
+</tr>
 
+<tr>
 <td width="50%" valign="top">
 
 ### Blog Preview Card
@@ -275,9 +291,7 @@ Responsive blog card component.
 → [Project Folder](./BlogPreviewCard/) • [Live Demo](https://blogpreviewcard-tk.netlify.app/)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### QR Code Component

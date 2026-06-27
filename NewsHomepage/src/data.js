@@ -24,7 +24,8 @@ export const images = {
     logo: "../src/assets/images/logo.svg",
     iconMenu: "../src/assets/images/icon-menu.svg",
     iconMenuClose: "../src/assets/images/icon-menu-close.svg",
-    imageWeb3Desktop:"../src/assets/images/image-web-3-desktop.jpg"
+    imageWeb3Desktop:"../src/assets/images/image-web-3-desktop.jpg",
+    imageWeb3Mobile:"../src/assets/images/image-web-3-mobile.jpg"
 };
 
 export const articles = [

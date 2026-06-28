@@ -25,16 +25,15 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <div className="p-10 text-lg">
+    <div className="max-w-7xl mx-auto p-6 md:p-10 text-lg">
       <header>
         <nav className="flex justify-between items-center">
-
           <img src={images.logo} alt="logo" />
-
+          
           {/* desktop */}
           <div className="hidden sm:flex gap-6">
             {navigations.map(item => (
-              <a key={item.name} href={item.href}>
+              <a key={item.name} href={item.href} className="hover:text-soft-red transition duration-300">
                 {item.name}
               </a>
             ))}

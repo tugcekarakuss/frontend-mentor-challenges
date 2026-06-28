@@ -1,6 +1,5 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
-import Sidebar from "./components/Sidebar"
 import NewsList from "./components/NewsList"
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
       <Header></Header>
       <main>
         <Hero></Hero>
-        <Sidebar></Sidebar>
         <NewsList></NewsList>
       </main>
     </>

@@ -1,7 +1,7 @@
 import { images, articles } from "../data"
 function Hero() {
   return (
-    <div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col gap-8 md:flex-row">
+    <div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col gap-8 lg:flex-row">
 
       <div className="flex flex-col flex-1">
         <div>
@@ -32,7 +32,7 @@ function Hero() {
       </div>
 
       {/* sidebar */}
-      <div className="flex flex-col bg-very-dark-blue p-5 border-b-2 last:border-none md:w-1/3">
+      <div className="flex flex-col bg-very-dark-blue p-5 border-b-2 last:border-none lg:w-1/3">
         <h3 className="text-soft-orange text-3xl md:text-4xl font-bold mb-4">New</h3>
         <div className="flex flex-col  justify-evenly gap-5">
           {articles.map(item => (

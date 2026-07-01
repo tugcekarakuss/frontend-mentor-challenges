@@ -1,4 +1,4 @@
-import { news_list } from "../data"
+import { news_list } from "/data"
 function NewsCard() {
   return (
     <div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col lg:flex-row gap-5 lg:gap-5">

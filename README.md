@@ -12,7 +12,7 @@ These projects helped me practice HTML, CSS, JavaScript and improve my responsiv
 ### News Homepage
 
 <a href="https://news-homepage-component.netlify.app">
-  <img src="./NewsHomepage/src/assets/images/news-homepage-preview.jpg" width="100%" />
+  <img src="./NewsHomepage/public/images/news-homepage-preview.jpg" width="100%" />
 </a>
 
 A responsive news homepage built with **React** and **Tailwind CSS**, featuring a fully functional mobile navigation menu and accessible interactions. The project focuses on component-based architecture, responsive layouts, state management with React hooks, and modern UI development practices.

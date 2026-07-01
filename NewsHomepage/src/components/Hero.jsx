@@ -1,4 +1,4 @@
-import { images, articles } from "../data"
+import { images, articles } from "/data"
 function Hero() {
   return (
     <div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col gap-8 lg:flex-row">

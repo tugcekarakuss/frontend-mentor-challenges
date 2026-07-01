@@ -32,8 +32,8 @@ function Hero() {
       </div>
 
       {/* sidebar */}
-      <div className="flex flex-col bg-very-dark-blue p-5 border-b-2 last:border-none lg:w-1/3">
-        <h3 className="text-soft-orange text-3xl md:text-4xl font-bold mb-4">New</h3>
+      <section className="flex flex-col bg-very-dark-blue p-5 border-b-2 last:border-none lg:w-1/3" aria-labelledby="new-title">
+        <h2 className="text-soft-orange text-3xl md:text-4xl font-bold mb-4" id="new-title">New</h2>
         <div className="flex flex-col  justify-evenly gap-5">
           {articles.map(item => (
             <div className=" border-b border-grayish-blue py-4  last:border-none" key={item.title}>
@@ -46,7 +46,7 @@ function Hero() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   )
 }

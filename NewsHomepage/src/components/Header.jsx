@@ -1,4 +1,4 @@
-import { images, navigations } from "../data"
+import { images, navigations } from "/data"
 import { useState } from "react"
 
 function MobileMenu({ isOpen, onClose }) {

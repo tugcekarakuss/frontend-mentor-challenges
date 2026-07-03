@@ -7,7 +7,7 @@ Built with **React, HTML, and CSS/Tailwind**, focusing on **semantic structure, 
 This project is a solution to a **Frontend Mentor challenge**.
 
 
-![Project Screenshot](./src/assets/images/news-homepage-preview.jpg)
+![Project Screenshot](../NewsHomepage/public/images/news-homepage-preview.jpg)
 ---
 
 ## Live Demo

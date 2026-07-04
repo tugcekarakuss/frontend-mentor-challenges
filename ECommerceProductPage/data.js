@@ -1,0 +1,17 @@
+export const images={
+    menuIcon:"./public/icon-menu.svg",
+    closeIcon:"./public/icon-close.svg",
+    cartIcon:"./public/icon-cart.svg",
+    deleteIcon:"./public/icon-delete.svg",
+    nextIcon:"./public/icon-next.svg",
+    previousIcon:"./public/icon-previous.svg",
+    profile:"./public/image-avatar.png",
+    product_1:"./public/image-product-1.jpg",
+    productThumbnail_1:"./public/image-product-1-thumbnail.jpg",
+    product_2:"./public/image-product-2.jpg",
+    productThumbnail_2:"./public/image-product-2-thumbnail.jpg",
+    product_3:"./public/image-product-3.jpg",
+    productThumbnail_3:"./public/image-product-3-thumbnail.jpg",
+    product_4:"./public/image-product-4.jpg",
+    productThumbnail_4:"./public/image-product-4-thumbnail.jpg",
+}

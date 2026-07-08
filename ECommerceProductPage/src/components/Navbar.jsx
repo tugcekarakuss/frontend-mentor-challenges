@@ -23,10 +23,16 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <div className="flex gap-5">
-                <button className="cursor-pointer">
-                    <img src={images.cartIcon} alt="" />
-                </button>
+            <div className="flex justify-center items-center gap-5">
+                <div className="relative flex">
+                    <button className="cursor-pointer">
+                        <img src={images.cartIcon} alt="cart" />
+                    </button>
+
+                    <span className="absolute -top-2 -right-2 bg-orange text-white text-xs px-2 py-0.5 rounded-full">
+                        2
+                    </span>
+                </div>
                 <img className="max-w-9 cursor-pointer hover:outline-3  rounded-full outline-orange"
                     src={images.profile}
                     alt="profile" />

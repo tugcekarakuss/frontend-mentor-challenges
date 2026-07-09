@@ -40,9 +40,11 @@ export default function Navbar() {
                     alt="profile" />
             </div>
             {isOpen && (
-                <div className="fixed inset-0 bg-black/50 z-40">
+                <div className="fixed inset-0 bg-black/50 z-40" onClick={()=>setIsOpen(false)}>
                     <div className="w-2/3 h-full bg-white p-6">
-                        <button onClick={() => setIsOpen(false)}>X</button>
+                        <button onClick={() => setIsOpen(false)}>
+                            <img src={images.closeIcon} alt="" />
+                        </button>
 
                         <div className="flex flex-col gap-5 mt-10">
                             {navigations.map(item => (

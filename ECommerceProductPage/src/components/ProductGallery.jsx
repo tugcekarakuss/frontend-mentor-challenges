@@ -1,14 +1,35 @@
-import {images,products } from "/data"
+import { useState } from "react"
+import { images, products } from "/data"
 export default function ProductGallery() {
+  const [index, setIndex] = useState(0)
+  const product = products[index]
+
+  function handleNextClick() {
+    if (index < products.length - 1) {
+      setIndex(index + 1)
+    }
+    else{
+      setIndex(0)
+    }
+  }
+
+  function handlePrevClick() {
+    if(index>0){
+      setIndex(index-1)
+    }
+    else{
+      setIndex(products.length-1)
+    }
+  }
   return (
     <div >
       <div className=" w-full relative lg:hidden">
-        <img src={products[0].image} alt="product" className="relative w-full h-64 md:h-full object-cover object-center md:rounded-2xl" />
+        <img src={product.image} alt="product" className="relative w-full object-cover  md:rounded-2xl" />
         <div className="flex flex-col z-50 items-center justify-center">
-          <button className="absolute left-5 top-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow">
+          <button className="absolute left-5 top-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow" onClick={handlePrevClick}>
             <img src={images.previousIcon} alt="previous button" className="w-4 h-4" />
           </button>
-          <button className="absolute right-5 top-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow">
+          <button className="absolute right-5 top-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow" onClick={handleNextClick}>
             <img src={images.nextIcon} alt="next button" className="w-4 h-4" />
           </button>
         </div>

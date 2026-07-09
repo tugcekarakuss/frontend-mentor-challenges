@@ -43,7 +43,7 @@ export default function Navbar() {
                 <div className="fixed inset-0 bg-black/50 z-40" onClick={()=>setIsOpen(false)}>
                     <div className="w-2/3 h-full bg-white p-6">
                         <button onClick={() => setIsOpen(false)}>
-                            <img src={images.closeIcon} alt="" />
+                            <img src={images.closeIcon} alt="close icon" />
                         </button>
 
                         <div className="flex flex-col gap-5 mt-10">

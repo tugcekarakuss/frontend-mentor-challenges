@@ -1,18 +1,20 @@
 import { images, navigations } from "/data"
+import { useState } from "react"
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <nav className="flex justify-between items-center max-w-7xl mx-auto p-6 md:p-10 text-lg border-b border-pale-orange">
             <div className="flex gap-2.5">
                 <button
-                    className="md:hidden">
-                    <img src={images.menuIcon} alt="open menu" />
+                    className="lg:hidden">
+                    <img src={images.menuIcon} alt="open menu" onClick={() => setIsOpen(true)} />
                 </button>
 
                 <h1 className="font-kumbh font-bold  text-2xl md:text-3xl">
                     sneakers
                 </h1>
 
-                <div className="hidden md:flex items-center gap-7 px-5 text-dark-grayish-blue ">
+                <div className="hidden lg:flex items-center gap-7 px-5 text-dark-grayish-blue ">
                     {navigations.map(items => (
                         <a className="hover:text-dark-blue transition-colors duration-300"
                             href={items.href}
@@ -37,7 +39,23 @@ export default function Navbar() {
                     src={images.profile}
                     alt="profile" />
             </div>
+            {isOpen && (
+                <div className="fixed inset-0 bg-black/50 z-40">
+                    <div className="w-2/3 h-full bg-white p-6">
+                        <button onClick={() => setIsOpen(false)}>X</button>
+
+                        <div className="flex flex-col gap-5 mt-10">
+                            {navigations.map(item => (
+                                <a key={item.name} href={item.href}>
+                                    {item.name}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
         </nav>
+
 
     )
 }

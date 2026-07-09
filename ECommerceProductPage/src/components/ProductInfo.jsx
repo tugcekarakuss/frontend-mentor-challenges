@@ -1,7 +1,7 @@
 import { images } from "/data"
 export default function ProductInfo() {
   return (
-    <div className="max-w-7xl mx-auto p-6">
+    <div className="max-w-7xl mx-auto py-6">
       <div className="flex flex-col gap-2">
         <h3 className="uppercase tracking-wider text-sm font-bold text-dark-grayish-blue">Sneaker Company</h3>
         <h2 className="font-bold text-2xl lg:text-4xl max-w-[20ch] text-dark-blue">Fall Limited Edition Sneakers</h2>

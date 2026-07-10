@@ -2,15 +2,17 @@ import { images, navigations } from "/data"
 import { useState } from "react"
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+    const [isOpenCart, setIsOpenCart] = useState(false)
     return (
-        <nav className="flex justify-between items-center max-w-7xl mx-auto p-6 md:p-10 text-lg border-b border-pale-orange">
+        <nav className="font-kumbh flex justify-between items-center max-w-7xl mx-auto p-6 md:p-10 text-lg border-b border-pale-orange">
             <div className="flex gap-2.5">
                 <button
+                    onClick={() => setIsOpen(true)}
                     className="lg:hidden">
-                    <img src={images.menuIcon} alt="open menu" onClick={() => setIsOpen(true)} />
+                    <img src={images.menuIcon} alt="open menu" />
                 </button>
 
-                <h1 className="font-kumbh font-bold  text-2xl md:text-3xl">
+                <h1 className="font-bold text-2xl md:text-3xl">
                     sneakers
                 </h1>
 
@@ -27,7 +29,7 @@ export default function Navbar() {
 
             <div className="flex justify-center items-center gap-5">
                 <div className="relative flex">
-                    <button className="cursor-pointer">
+                    <button className="cursor-pointer" onClick={() => setIsOpenCart(true)}>
                         <img src={images.cartIcon} alt="cart" />
                     </button>
 
@@ -40,7 +42,7 @@ export default function Navbar() {
                     alt="profile" />
             </div>
             {isOpen && (
-                <div className="fixed inset-0 bg-black/50 z-40" onClick={()=>setIsOpen(false)}>
+                <div className="fixed inset-0 bg-black/50 z-40" onClick={() => setIsOpen(false)}>
                     <div className="w-2/3 h-full bg-white p-6">
                         <button onClick={() => setIsOpen(false)}>
                             <img src={images.closeIcon} alt="close icon" />
@@ -54,6 +56,19 @@ export default function Navbar() {
                             ))}
                         </div>
                     </div>
+                </div>
+            )}
+
+            {isOpenCart && (
+                <div className="absolute top-30 right-30 w-80 bg-white rounded-lg shadow-lg z-50">
+                    <div className="p-4 border-b border-dark-grayish-blue font-bold">
+                        Cart
+                    </div>
+
+                    <div className="p-4">
+                        <p className="text-center text-gray-500">Your cart is empty.</p>
+                    </div>
+
                 </div>
             )}
         </nav>

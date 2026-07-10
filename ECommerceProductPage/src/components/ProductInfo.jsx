@@ -1,7 +1,17 @@
+import { useState } from "react"
 import { images } from "/data"
 export default function ProductInfo() {
+  const [count, setCount] = useState(1)
+  function handleIncrease(){
+    setCount(count+1)
+  }
+  function handleDecrease(){
+    if(count>1){
+      setCount(count-1)
+    }    
+  }
   return (
-    <div className="max-w-7xl mx-auto py-6">
+    <div className="font-kumbh max-w-7xl mx-auto py-6">
       <div className="flex flex-col gap-2">
         <h3 className="uppercase tracking-wider text-sm font-bold text-dark-grayish-blue">Sneaker Company</h3>
         <h2 className="font-bold text-2xl lg:text-4xl max-w-[20ch] text-dark-blue">Fall Limited Edition Sneakers</h2>
@@ -18,9 +28,9 @@ export default function ProductInfo() {
         </div>
         <div className="flex flex-col gap-5  lg:flex-row">
           <div className="flex bg-light-grayish-blue w-full px-8 py-4 justify-between items-center rounded-md">
-            <button className="cursor-pointer hover:opacity-50 p-2"><img src={images.minusIcon} alt="minus icon" /></button>
-            <p>1</p>
-            <button className="cursor-pointer hover:opacity-50 p-2"><img src={images.plusIcon} alt="plus icon" /></button>
+            <button className="cursor-pointer hover:opacity-50 p-2" onClick={handleDecrease}><img src={images.minusIcon} alt="minus icon" /></button>
+            <p className="font-bold">{count}</p>
+            <button className="cursor-pointer hover:opacity-50 p-2" onClick={handleIncrease}><img src={images.plusIcon} alt="plus icon"  /></button>
           </div>
           <button className="flex grow justify-center items-center gap-2.5 px-8 py-4 font-bold bg-orange hover:bg-pale-orange transition-colors duration-300 w-full rounded-md cursor-pointer"><img src={images.cartIcon} alt="add to cart" />Add to Card</button>
         </div>

@@ -9,7 +9,7 @@ function App() {
   const[cardCount,setCardCount]=useState(0)
   return (
     <>
-     <Navbar cardCount={cardCount}/>
+     <Navbar cardCount={cardCount} setCardCount={setCardCount}/>
      <main className="max-w-7xl mx-auto p-6 px-0 md:p-10 flex flex-col lg:flex-row gap-1 md:gap-5">
       <ProductGallery/>
       <ProductInfo setCardCount={setCardCount}/>

@@ -1,6 +1,6 @@
-import { images, navigations } from "/data"
+import { images, navigations, products } from "/data"
 import { useState } from "react"
-export default function Navbar({ cardCount }) {
+export default function Navbar({ cardCount, setCardCount }) {
     const [isOpen, setIsOpen] = useState(false)
     const [isOpenCart, setIsOpenCart] = useState(false)
     return (
@@ -29,7 +29,7 @@ export default function Navbar({ cardCount }) {
 
             <div className="flex justify-center items-center gap-5">
                 <div className="relative flex">
-                    <button className="cursor-pointer" onClick={() => setIsOpenCart(true)}>
+                    <button className="cursor-pointer" onClick={() => setIsOpenCart(prev => !prev)}>
                         <img src={images.cartIcon} alt="cart" />
                     </button>
 
@@ -62,19 +62,35 @@ export default function Navbar({ cardCount }) {
             )}
 
             {isOpenCart && (
-                <div className="absolute top-30 right-30 w-80 bg-white rounded-lg shadow-lg z-50">
-                    <div className="p-4 border-b border-dark-grayish-blue font-bold">
+                <div className="absolute top-30 left-1/2 -translate-x-1/2 w-[90%] max-w-sm bg-white rounded-lg shadow-lg z-50 md:left-auto md:right-30 md:translate-x-0">
+                    <div className="p-4 border-b border-light-grayish-blue font-bold">
                         Cart
                     </div>
 
-                    <div className="p-4">
-                        <p className="text-center text-gray-500">Your cart is empty.</p>
-                    </div>
+                    <div className="p-4" >
+                        {cardCount > 0 ? (
+                            <div>
+                                <div className="flex justify-evenly items-center gap-3">
+                                    <img src={products[0].thumbnail} className="w-16 rounded-md" alt="product image" />
+                                    <div>
+                                        <h1 className="text-sm text-dark-grayish-blue">Fall Limited Edition Sneakers</h1>
+                                        <p>$125.00 x <span>{cardCount}</span>{" "} <span className="font-bold">${(cardCount * 125).toFixed(2)}</span></p>
+                                    </div>
+                                    <img src={images.deleteIcon} alt="delete icon" className="cursor-pointer" onClick={() => setCardCount(0)} />
+                                </div>
 
+                                <button className="w-full bg-orange hover:bg-pale-orange hover:text-dark-blue transition duration-500 text-white py-3 rounded-md mt-4">
+                                    Checkout
+                                </button>
+                            </div>
+                        ) : (
+                            <p className="text-center text-gray-500 py-13">
+                                Your cart is empty.
+                            </p>
+                        )}
+                    </div>
                 </div>
             )}
         </nav>
-
-
     )
 }

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { images } from "/data"
-export default function ProductInfo() {
+export default function ProductInfo({setCardCount}) {
   const [count, setCount] = useState(1)
   function handleIncrease(){
     setCount(count+1)
@@ -32,7 +32,7 @@ export default function ProductInfo() {
             <p className="font-bold">{count}</p>
             <button className="cursor-pointer hover:opacity-50 p-2" onClick={handleIncrease}><img src={images.plusIcon} alt="plus icon"  /></button>
           </div>
-          <button className="flex grow justify-center items-center gap-2.5 px-8 py-4 font-bold bg-orange hover:bg-pale-orange transition-colors duration-300 w-full rounded-md cursor-pointer"><img src={images.cartIcon} alt="add to cart" />Add to Card</button>
+          <button onClick={()=>setCardCount(prev=>prev+count)} className="flex grow justify-center items-center gap-2.5 px-8 py-4 font-bold bg-orange hover:bg-pale-orange transition-colors duration-300 w-full rounded-md cursor-pointer"><img src={images.cartIcon} alt="add to cart" />Add to Card</button>
         </div>
 
       </div>

@@ -1,6 +1,6 @@
 import { images, navigations } from "/data"
 import { useState } from "react"
-export default function Navbar() {
+export default function Navbar({ cardCount }) {
     const [isOpen, setIsOpen] = useState(false)
     const [isOpenCart, setIsOpenCart] = useState(false)
     return (
@@ -33,9 +33,11 @@ export default function Navbar() {
                         <img src={images.cartIcon} alt="cart" />
                     </button>
 
-                    <span className="absolute -top-2 -right-2 bg-orange text-white text-xs px-2 py-0.5 rounded-full">
-                        2
-                    </span>
+                    {cardCount > 0 && (
+                        <span className="absolute -top-2 -right-2 bg-orange text-white text-xs px-2 py-0.5 rounded-full">
+                            {cardCount}
+                        </span>
+                    )}
                 </div>
                 <img className="max-w-9 cursor-pointer hover:outline-3  rounded-full outline-orange"
                     src={images.profile}

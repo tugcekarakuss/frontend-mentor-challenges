@@ -8,17 +8,17 @@ export default function ProductGallery() {
     if (index < products.length - 1) {
       setIndex(index + 1)
     }
-    else{
+    else {
       setIndex(0)
     }
   }
 
   function handlePrevClick() {
-    if(index>0){
-      setIndex(index-1)
+    if (index > 0) {
+      setIndex(index - 1)
     }
-    else{
-      setIndex(products.length-1)
+    else {
+      setIndex(products.length - 1)
     }
   }
   return (
@@ -36,11 +36,23 @@ export default function ProductGallery() {
       </div>
 
       <div className="hidden lg:grid grid-cols-4 grid-rows-2 justify-items-stretch gap-3">
-        <img src={products[0].image} className="col-span-4 w-full h-80 object-cover rounded-xl" alt="" />
-        <img src={products[0].thumbnail} className="outline-5 opacity-50 outline-orange w-full h-32 object-cover rounded-md" alt="" />
-        <img src={products[1].thumbnail} className="w-full h-32 object-cover rounded-md" alt="" />
-        <img src={products[2].thumbnail} className="w-full h-32 object-cover rounded-md" alt="" />
-        <img src={products[3].thumbnail} className="w-full h-32 object-cover rounded-md" alt="" />
+        <img src={product.image} className="col-span-4 w-full h-104 object-cover object-top rounded-xl" alt="" />
+
+        {products.map((item, i) => (
+          <div
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`relative cursor-pointer rounded-md overflow-hidden h-24 ${index === i ? "ring-2 ring-orange-500" : ""
+              }`}
+          >
+            <img
+              src={item.thumbnail}
+              className={`w-full h-32 object-cover ${index === i ? "opacity-50" : ""
+                }`}
+              alt="thumbnail"
+            />
+          </div>
+        ))}
       </div>
 
     </div>

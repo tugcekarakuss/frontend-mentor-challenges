@@ -1,16 +1,110 @@
-# React + Vite
+# E-commerce Product Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive **E-commerce Product Page** built with modern frontend practices.
 
-Currently, two official plugins are available:
+Built with **React and Tailwind CSS**, focusing on **component architecture, state management, and dynamic UI interactions**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a solution to a **Frontend Mentor challenge**.
 
-## React Compiler
+![Project Screenshot](./public/project-preview.jpg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Live Site:**
+https://e-commerce-product-projectt.netlify.app/
+
+---
+
+## Features
+
+### Product Gallery
+
+* Interactive image gallery with thumbnail selection
+* Desktop layout with preview + thumbnails
+* Mobile-friendly slider navigation (next/previous controls)
+* Active thumbnail indicator
+
+---
+
+### Cart Functionality
+
+* Add/remove product quantity
+* Dynamic cart state management
+* Real-time price calculation
+* Conditional rendering for empty/full cart state
+* Delete item functionality
+
+---
+
+### Navigation
+
+* Responsive navbar
+* Cart dropdown component
+
+---
+
+### User Experience
+
+* Instant UI updates based on state changes
+* Clear visual feedback for interactions
+* Smooth and intuitive product selection flow
+
+---
+
+### Responsive Design
+
+* Mobile-first approach
+* Fully responsive layout (mobile, tablet, desktop)
+* Flexible image and content scaling
+
+---
+
+## Technologies Used
+
+### React / JavaScript
+
+* Functional components
+* useState for state management
+* Event handling (onClick, dynamic updates)
+* Component-based architecture
+
+---
+
+### CSS / Tailwind CSS
+
+* Utility-first styling
+* Responsive design system
+* Flexbox & Grid layouts
+* Conditional styling for active states
+
+---
+
+## What I Learned
+
+* Managing shared state between components (cart logic)
+* Building reusable and scalable UI components
+* Handling dynamic UI updates based on user interaction
+* Structuring a real-world product page layout
+* Implementing responsive image galleries
+
+---
+
+## Reflection
+
+This project strengthened my understanding of **state-driven UI development**, especially in handling **cart logic and dynamic pricing**.
+
+Breaking the application into components like **Navbar, Product Gallery, and Product Info** improved maintainability and scalability.
+
+Implementing responsive behavior and interactive elements made the project closer to a **real-world e-commerce experience**.
+
+---
+
+## Credits
+
+**Coded by:**
+[Tuğçe Karakuş](https://github.com/tugcekarakuss)
+
+**Challenge by:**
+[Frontend Mentor](https://www.frontendmentor.io)

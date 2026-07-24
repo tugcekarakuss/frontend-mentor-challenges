@@ -1,15 +1,7 @@
 import { useState } from "react"
 import { images } from "/data"
-export default function ProductInfo({setCardCount}) {
+export default function ProductInfo({ setCardCount }) {
   const [count, setCount] = useState(1)
-  function handleIncrease(){
-    setCount(count+1)
-  }
-  function handleDecrease(){
-    if(count>1){
-      setCount(count-1)
-    }    
-  }
   return (
     <div className="font-kumbh max-w-7xl mx-auto py-6">
       <div className="flex flex-col gap-2">
@@ -27,12 +19,30 @@ export default function ProductInfo({setCardCount}) {
           <p className="text-dark-grayish-blue line-through font-bold">$250.00</p>
         </div>
         <div className="flex flex-col gap-5  lg:flex-row">
+
           <div className="flex bg-light-grayish-blue w-full px-8 py-4 justify-between items-center rounded-md">
-            <button className="cursor-pointer hover:opacity-50 p-2" onClick={handleDecrease}><img src={images.minusIcon} alt="minus icon" /></button>
+
+            <button className="cursor-pointer hover:opacity-50 p-2"
+              onClick={() => setCount(c => (c > 1 ? c - 1 : c))}>
+              <img src={images.minusIcon} alt="minus icon" />
+            </button>
+
             <p className="font-bold">{count}</p>
-            <button className="cursor-pointer hover:opacity-50 p-2" onClick={handleIncrease}><img src={images.plusIcon} alt="plus icon"  /></button>
+
+            <button className="cursor-pointer hover:opacity-50 p-2"
+              onClick={() => setCount(c => c + 1)}>
+              <img src={images.plusIcon} alt="plus icon" />
+            </button>
           </div>
-          <button onClick={()=>setCardCount(prev=>prev+count)} className="flex grow justify-center items-center gap-2.5 px-8 py-4 font-bold bg-orange hover:bg-pale-orange transition-colors duration-300 w-full rounded-md cursor-pointer"><img src={images.cartIcon} alt="add to cart" />Add to Card</button>
+
+          <button onClick={() => {
+            setCardCount(prev => prev + count)
+            setCount(1)
+          }}
+            className="flex grow justify-center items-center gap-2.5 px-8 py-4 font-bold bg-orange hover:bg-pale-orange transition-colors duration-300 w-full rounded-md cursor-pointer">
+            <img src={images.cartIcon} alt="add to cart" />
+            <p>Add to Cart</p>
+          </button>
         </div>
 
       </div>

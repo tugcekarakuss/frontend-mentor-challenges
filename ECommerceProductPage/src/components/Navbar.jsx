@@ -18,7 +18,7 @@ export default function Navbar({ cardCount, setCardCount }) {
 
                 <div className="hidden lg:flex items-center gap-7 px-5 text-dark-grayish-blue ">
                     {navigations.map(items => (
-                        <a className="hover:text-dark-blue transition-colors duration-300"
+                        <a className="relative  text-dark-grayish-blue hover:text-dark-blue transition-colors duration-300 after:absolute after:left-0 after:-bottom-10 after:h-1 after:w-0 after:bg-orange after:transition-all after:duration-300 hover:after:w-full"
                             href={items.href}
                             key={items.name}>
                             {items.name}
@@ -62,32 +62,35 @@ export default function Navbar({ cardCount, setCardCount }) {
             )}
 
             {isOpenCart && (
-                <div className="absolute top-30 left-1/2 -translate-x-1/2 w-[90%] max-w-sm bg-white rounded-lg shadow-lg z-50 md:left-auto md:right-30 md:translate-x-0">
-                    <div className="p-4 border-b border-light-grayish-blue font-bold">
-                        Cart
-                    </div>
+                <div className="fixed inset-0 z-40"
+                    onClick={() => setIsOpenCart(false)}>
+                    <div className="absolute top-30 left-1/2 -translate-x-1/2 w-[90%] max-w-sm bg-white rounded-lg shadow-lg z-50 md:left-auto md:right-30 md:translate-x-0">
+                        <div className="p-4 border-b border-light-grayish-blue font-bold">
+                            Cart
+                        </div>
 
-                    <div className="p-4" >
-                        {cardCount > 0 ? (
-                            <div>
-                                <div className="flex justify-evenly items-center gap-3">
-                                    <img src={products[0].thumbnail} className="w-16 rounded-md" alt="product image" />
-                                    <div>
-                                        <h1 className="text-sm text-dark-grayish-blue">Fall Limited Edition Sneakers</h1>
-                                        <p>$125.00 x <span>{cardCount}</span>{" "} <span className="font-bold">${(cardCount * 125).toFixed(2)}</span></p>
+                        <div className="p-4" >
+                            {cardCount > 0 ? (
+                                <div>
+                                    <div className="flex justify-evenly items-center gap-3">
+                                        <img src={products[0].thumbnail} className="w-16 rounded-md" alt="product image" />
+                                        <div>
+                                            <h1 className="text-sm text-dark-grayish-blue">Fall Limited Edition Sneakers</h1>
+                                            <p>$125.00 x <span>{cardCount}</span>{" "} <span className="font-bold">${(cardCount * 125).toFixed(2)}</span></p>
+                                        </div>
+                                        <img src={images.deleteIcon} alt="delete icon" className="cursor-pointer" onClick={() => setCardCount(0)} />
                                     </div>
-                                    <img src={images.deleteIcon} alt="delete icon" className="cursor-pointer" onClick={() => setCardCount(0)} />
-                                </div>
 
-                                <button className="w-full bg-orange hover:bg-pale-orange hover:text-dark-blue transition duration-500 text-white py-3 rounded-md mt-4">
-                                    Checkout
-                                </button>
-                            </div>
-                        ) : (
-                            <p className="text-center text-gray-500 py-13">
-                                Your cart is empty.
-                            </p>
-                        )}
+                                    <button className="w-full bg-orange hover:bg-pale-orange hover:text-dark-blue transition duration-500 text-white py-3 rounded-md mt-4">
+                                        Checkout
+                                    </button>
+                                </div>
+                            ) : (
+                                <p className="text-center text-gray-500 py-13">
+                                    Your cart is empty.
+                                </p>
+                            )}
+                        </div>
                     </div>
                 </div>
             )}

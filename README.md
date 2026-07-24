@@ -9,6 +9,19 @@ These projects helped me practice HTML, CSS, JavaScript and improve my responsiv
 <tr>
 <td width="50%" valign="top">
 
+### E-commerce Product 
+
+<a href="https://e-commerce-product-projectt.netlify.app/">
+  <img src="./ECommerceProductPage/public/project-preview.jpg" width="100%" />
+</a>
+
+A responsive e-commerce product gallery built with **React** and **Tailwind CSS**, featuring an interactive image slider, thumbnail-based navigation, and fully responsive behavior across devices. The project focuses on component-driven architecture, dynamic state management with React hooks, and modern UI patterns commonly used in real-world product pages.
+
+→ [Project Folder](./ECommerceProductPage/) • [Live Demo](https://e-commerce-product-projectt.netlify.app/)
+
+</td>
+<td width="50%" valign="top">
+
 ### News Homepage
 
 <a href="https://news-homepage-component.netlify.app">

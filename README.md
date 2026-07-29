@@ -20,6 +20,12 @@ A responsive e-commerce product gallery built with **React** and **Tailwind CSS*
 → [Project Folder](./ECommerceProductPage/) • [Live Demo](https://e-commerce-product-projectt.netlify.app/)
 
 </td>
+</tr>
+
+<tr>
+
+
+
 <td width="50%" valign="top">
 
 ### News Homepage
@@ -31,6 +37,19 @@ A responsive e-commerce product gallery built with **React** and **Tailwind CSS*
 A responsive news homepage built with **React** and **Tailwind CSS**, featuring a fully functional mobile navigation menu and accessible interactions. The project focuses on component-based architecture, responsive layouts, state management with React hooks, and modern UI development practices.
 
 → [Project Folder](./NewsHomepage/) • [Live Demo](https://news-homepage-component.netlify.app)
+
+</td>
+<td width="50%" valign="top">
+
+### NFT Preview Card
+
+<a href="https://frontend-mentor-challenges-pmio.vercel.app/">
+  <img src="./NftPreviewCardComponent/public/preview.jpg" width="100%" />
+</a>
+
+A responsive NFT preview card built with **React** and **Tailwind CSS**, featuring a clean UI layout and interactive hover overlay effects. The project focuses on component structure, visual precision, and implementing smooth user interactions based on modern UI design principles.
+
+→ [Project Folder](./NftPreviewCardComponent/) • [Live Demo](https://frontend-mentor-challenges-pmio.vercel.app/)
 
 </td>
 

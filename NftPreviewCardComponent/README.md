@@ -1,16 +1,96 @@
-# React + Vite
+# NFT Preview Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive **NFT Preview Card Component** built with modern frontend practices.
 
-Currently, two official plugins are available:
+Built with **React and Tailwind CSS**, focusing on **component structure, styling precision, and hover interactions**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a solution to a **Frontend Mentor challenge**.
 
-## React Compiler
+![Project Screenshot](./public/preview.jpg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Live Site:**
+https://frontend-mentor-challenges-pmio.vercel.app/
+
+---
+
+## Features
+
+### NFT Card UI
+
+* Clean and modern card layout
+* Display of NFT image, title, price, and creator info
+* Structured and reusable component design
+
+---
+
+### Hover Interaction
+
+* Overlay effect on image hover
+* Smooth transition animations
+* Visual feedback for user interaction
+
+---
+
+### User Experience
+
+* Clear visual hierarchy
+* Interactive hover states
+* Minimal and focused UI design
+
+---
+
+### Responsive Design
+
+* Mobile-first approach
+* Fully responsive layout
+* Consistent spacing and alignment across screen sizes
+
+---
+
+## Technologies Used
+
+### React / JavaScript
+
+* Functional components
+* Component-based architecture
+
+---
+
+### CSS / Tailwind CSS
+
+* Utility-first styling
+* Flexbox for layout structure
+* Hover and transition effects
+* Responsive design utilities
+
+---
+
+## What I Learned
+
+* Creating clean and reusable UI components
+* Implementing hover-based interactions
+* Managing layout structure with Flexbox
+* Improving pixel-perfect design implementation
+* Translating design mockups into code
+
+---
+
+## Reflection
+
+This project helped strengthen my understanding of **UI precision and interaction design**, especially in creating **hover overlays and clean card layouts**.
+
+Focusing on small details like spacing, typography, and hover states improved my ability to build **polished and production-ready components**.
+
+---
+
+## Credits
+
+**Coded by:**
+[Tuğçe Karakuş](https://github.com/tugcekarakuss)
+
+**Challenge by:**
+[Frontend Mentor](https://www.frontendmentor.io)

@@ -1,3 +1,8 @@
+import facebook from "../assets/images/icons/icon-facebook.svg"
+import twitter from "../assets/images/icons/icon-twitter.svg"
+import pinterest from "../assets/images/icons/icon-pinterest.svg"
+import instagram from "../assets/images/icons/icon-instagram.svg"
+
 import deepEarthDesktop from "../assets/images/creations/desktop/image-deep-earth.jpg";
 import deepEarthMobile from "../assets/images/creations/mobile/image-deep-earth.jpg";
 import nightArcadeDesktop from "../assets/images/creations/desktop/image-night-arcade.jpg";
@@ -96,4 +101,11 @@ export const creations = [
             mobile: fisheyeMobile
         }
     },
+]
+
+export const socialLinks=[
+    {id:1,title:"facebook",href:"#",icon:facebook},
+    {id:2,title:"twitter",href:"#",icon:twitter},
+    {id:3,title:"pinterest",href:"#",icon:pinterest},
+    {id:4,title:"instagram",href:"#",icon:instagram},
 ]

@@ -10,8 +10,8 @@ export default function Header() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col">
         <Navbar />
 
-        <div className="flex-1 flex items-center">
-          <h1 className="font-light uppercase text-white text-5xl md:text-6xl max-w-md border border-white p-4">
+        <div className="flex-1 flex items-center justify-center md:justify-start">
+          <h1 className="uppercase text-white text-5xl md:text-6xl max-w-lg border-2 border-white py-6 px-6">
             Immersive experiences that deliver
           </h1>
         </div>

@@ -13,7 +13,7 @@ These projects helped me practice HTML, CSS, JavaScript and improve my responsiv
 ### Loopstudios Landing Page
 
 <a href="https://loop-studios-landing-page-rose.vercel.app/">
-  <img src="./LoopstudiosLandingPage/public/preview.jpg" width="100%" />
+  <img src="./LoopStudiosLandingPage/public/preview.jpg" width="100%" />
 </a>
 
 A responsive landing page built with **React** and **Tailwind CSS**, featuring a responsive navigation menu, mobile and desktop layouts, data-driven creation cards, and interactive hover effects. The project focuses on responsive design, component-based architecture, dynamic rendering, and creating a polished landing page experience across different screen sizes.

@@ -3,7 +3,7 @@ import heroMobile from "../assets/images/about/mobile-image-interactive.jpg"
 
 export default function AboutUs() {
   return (
-    <section className="max-w-6xl mx-auto px-6 my-20">
+    <section className="max-w-6xl mx-auto px-6 my-30">
       <div className="relative">
 
         <picture>
@@ -12,7 +12,7 @@ export default function AboutUs() {
         </picture>
 
 
-        <div className="bg-white md:pt-15 md:ps-15 mt-8 md:absolute md:bottom-0 md:right-20 md:max-w-lg flex-col items-end">
+        <div className="bg-white md:pt-15 md:ps-15 mt-8 md:absolute md:bottom-0 md:right-0 md:max-w-lg flex-col items-end">
           <h3 className="font-josefin-sans uppercase text-4xl mb-4 text-center md:text-left">The leader in interactive VR</h3>
           <p className="font-alata text-black/50 text-center md:text-left">
             Founded in 2011, Loopstudios has been producing world-class virtual reality

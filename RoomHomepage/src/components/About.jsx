@@ -4,7 +4,7 @@ import '../App.css'
 export default function About() {
   return (
     <div className="grid lg:grid-cols-3 lg:col-span-3">
-                    <img src={AboutDark} alt="" className="h-full w-full object-cover"/>
+                    <img src={AboutDark} alt="product image" className="h-full w-full object-cover"/>
 
                     <div className="p-10 font-league-spartan flex flex-col gap-5">
                         <h2 className="uppercase font-bold tracking-[5px]">About our furniture</h2>
@@ -18,7 +18,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    <img src={AboutLight} alt="" className="h-full w-full object-cover"/>
+                    <img src={AboutLight} alt="product image" className="h-full w-full object-cover"/>
                 </div>
   )
 }

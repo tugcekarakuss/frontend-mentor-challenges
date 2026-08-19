@@ -3,7 +3,6 @@
 
 @theme{
   --font-league-spartan:"League Spartan",sans serif;
-  --color-*: initial;
   --color-white:hsl(0, 100%, 100%);
   --color-grey-light:hsl(0, 0%, 63%);
   --color-grey-dark:hsl(0, 0%, 27%);

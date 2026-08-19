@@ -37,14 +37,14 @@ export default function Header() {
                     <div className="absolute bottom-0 right-0 flex lg:-right-35">
                         <button
                             onClick={handlePrevious}
-                            className="bg-grey-black px-7 py-3"
+                            className="bg-grey-black hover:bg-grey-light transition-colors duration-300 p-7"
                         >
                             <img src={icons.left} alt="Previous slide" />
                         </button>
 
                         <button
                             onClick={handleNext}
-                            className="bg-grey-black px-7 py-3"
+                            className="bg-grey-black hover:bg-grey-light transition-colors duration-300 p-7"
                         >
                             <img src={icons.right} alt="Next slide" />
                         </button>
@@ -58,7 +58,7 @@ export default function Header() {
 
                         <p className="text-grey-light">{slide.description}</p>
 
-                        <button className="flex gap-3 justify-center items-center">
+                        <button className="flex gap-3 justify-center items-center transition-opacity duration-300 hover:opacity-50 cursor-pointer">
                             <p className="tracking-[10px] font-medium">SHOP NOW</p>
                             <img src={icons.arrow} alt="arrow icon" />
                         </button>

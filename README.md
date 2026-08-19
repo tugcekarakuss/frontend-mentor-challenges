@@ -7,6 +7,22 @@ These projects helped me practice HTML, CSS, JavaScript and improve my responsiv
 
 <table>
 <tr>
+<td width="50%" valign="top">
+
+### Room Homepage
+
+<a href="https://roomhomepage-topaz.vercel.app/">
+  <img src="./RoomHomepage/public/preview.jpg" width="100%" />
+</a>
+
+A responsive homepage built with **React** and **Tailwind CSS**, featuring a responsive navigation menu, interactive hero slider, mobile and desktop layouts, dynamic slide content, and smooth UI animations. The project focuses on responsive design, component-based architecture, dynamic rendering, and creating a polished furniture homepage experience across different screen sizes.
+
+→ [Project Folder](./RoomHomepage/) • [Live Demo](https://roomhomepage-topaz.vercel.app/)
+
+</td>
+
+</tr>
+<tr>
 
 <td width="50%" valign="top">
 

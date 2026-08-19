@@ -1,16 +1,109 @@
-# React + Vite
+# Room Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive **Room Homepage** built with modern frontend practices.
 
-Currently, two official plugins are available:
+Built with **React and Tailwind CSS**, focusing on **responsive layout, component-based architecture, dynamic data rendering, interactive navigation, and smooth UI animations**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is inspired by a **Frontend Mentor challenge**.
 
-## React Compiler
+![Project Screenshot](./public/preview.jpg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://roomhomepage-topaz.vercel.app/
+
+---
+
+## Features
+
+### Responsive Header & Navigation
+
+- Responsive navigation for mobile and desktop
+- Mobile navigation menu with open/close functionality
+- Animated mobile menu transition
+- Dark overlay when the mobile menu is open
+- Navigation links with animated hover effects
+- Responsive Room logo placement
+
+---
+
+### Hero Slider
+
+- Dynamic hero slider rendered from data
+- Previous and next slide controls
+- Circular slide navigation
+- Separate mobile and desktop images using `<picture>`
+- Dynamic slide titles and descriptions
+- Smooth fade transition between slides
+- Responsive hero layout
+
+---
+
+### About Section
+
+- Responsive three-column layout on larger screens
+- Separate dark and light furniture images
+- Responsive image sizing with `object-cover`
+- Responsive typography and spacing
+- Semantic content structure
+
+---
+
+### User Experience
+
+- Smooth hover transitions
+- Animated navigation interactions
+- Interactive mobile navigation
+- Responsive layouts across different screen sizes
+- Clear visual hierarchy and typography
+- Mobile-first approach
+
+---
+
+## Technologies Used
+
+### React / JavaScript
+
+- Functional components
+- `useState` for navigation and slider state
+- Event handling
+- Component-based architecture
+- Dynamic rendering with `map()`
+- Data-driven slide and navigation content
+
+---
+
+### Tailwind CSS
+
+- Utility-first styling
+- Responsive breakpoints
+- CSS Grid and Flexbox
+- Positioning and overlays
+- Responsive typography
+- Hover effects
+- CSS transitions and animations
+- Responsive image layouts
+
+---
+
+## Project Structure
+
+```text
+src/
+├── assets/
+│   ├── images/
+│   └── icons/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Header.jsx
+│   └── About.jsx
+│
+├── data.js
+│   
+│
+├── App.jsx
+├── App.css
+└── main.jsx
